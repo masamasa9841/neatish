@@ -5,12 +5,12 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width">
   <title><?php wp_title('|', true, 'right'); ?></title>
+  <?php wp_enqueue_script('jquery');//jQueryの読み込み?>
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 
-<?php get_template_part('templates/layout/navigation/navigation.php');//ナヴィゲーションの設定テンプレート?>
-
+<?php get_template_part('templates/layout/navigation/navigation');//ナヴィゲーションの設定テンプレート?>
 <!-- header -->
 <div id="container">
     <header id="global-head">

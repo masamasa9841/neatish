@@ -7,5 +7,5 @@
   <footer>
     <small>&copy; <?php bloginfo('name'); ?> All Rights Reserved.</small>
   </footer>
-  <?php get_template_part('nav'); //フッターモバイルボタンのテンプレート?>
+  <?php get_template_part('template-parts/nav'); //フッターモバイルボタンのテンプレート?>
 </html>

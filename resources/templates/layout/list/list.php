@@ -17,7 +17,7 @@
                     <?php the_post_thumbnail( 'thumbnail_200_140', array('class' => 'entry-thumnail', 'alt' => get_the_title()) ); ?></a>
                 <?php else : // has not thumbnail ?>
                     <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>resources/src/images/no-image.png" alt="NO IMAGE" class="entry-thumnail no-image" /></a>
+                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/no-image.png" alt="NO IMAGE" class="entry-thumnail no-image" /></a>
                 <?php endif; ?>
             </div>
             <!-- thumbnail -->

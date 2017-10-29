@@ -1,0 +1,61 @@
+$_base-font-size-px: 14px !default;
+$_base-background: #fff;
+$_base-navigation-width: 260px;
+
+body {
+    font-size: $_base-font-size-px;
+    font-family: 'Lato',
+                 'Hiragino Kaku Gothic Pro',
+                 'ヒラギノ角ゴ Pro W3',
+                  Meiryo,
+                  メイリオ,
+                  Osaka,
+                  'MS PGothic',
+                  arial,
+                  helvetica,
+                  sans-serif;
+    background: $_base-background;
+}
+
+body,
+header,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    background: #fff;
+    min-height: 1400px;
+    width: 750px;
+    float: left;
+}
+/* サイドバー右側 */
+
+#sidebar_right {
+    padding: 60px;
+    float: left;
+    width: 300px;
+}
+#main p {
+    margin-bottom: 1em;
+    line-height: 1.9;
+}
+
+#main .inner {
+    padding: 60px;
+}
+
+h3 {
+    font-size: 131%;
+    margin-bottom: .7em;
+}
+
+#copyright a {
+    color: #666;
+    text-decoration: none;
+}
+
+#copyright a:hover {
+    text-decoration: underline;
+}

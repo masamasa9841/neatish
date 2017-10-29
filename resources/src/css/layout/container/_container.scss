@@ -1,0 +1,11 @@
+#container {
+    margin-left: $_base-navigation-width;
+    position: relative;
+    width: 100%;
+
+}
+#container, #brand-logo {
+	-moz-transition: margin-left .25s linear;
+	-webkit-transition: margin-left .25s linear;
+	transition: margin-left .25s linear;
+}
