@@ -1,0 +1,18 @@
+{
+  "name": "neatish",
+  "version": "1.0.0",
+  "description": "* [GNU General Public License v2.0](http://www.gnu.org/licenses/gpl-2.0.html) ## Third-party resources ### perfect-scrollbar * License: MIT License * Source: https://github.com/utatti/perfect-scrollbar ### velocity * License: MIT License * Source: https://github.com/julianshapiro/velocity",
+  "scripts": {
+    "build-sass": "node-sass -w --source-map true --output-style expanded resources/src/css/style.scss resources/src/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masamasa9841/neatish.git"
+  },
+  "author": "masamasa9841",
+  "license": "GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/masamasa9841/neatish/issues"
+  },
+  "homepage": "https://github.com/masamasa9841/neatish#readme"
+}
