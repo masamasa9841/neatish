@@ -4,7 +4,7 @@ if ( !function_exists( 'add_filis' ) ):
 
         // テーマスタイルの呼び出し
         wp_enqueue_style( 'main-style',
-            get_template_directory_uri() . '/style.css'
+            get_template_directory_uri() . '/resources/src/css/style.css'
         );
 
     }
