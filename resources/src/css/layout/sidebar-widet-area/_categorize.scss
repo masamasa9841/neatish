@@ -1,0 +1,23 @@
+.widget_categories ul {
+    margin-left: -16px;
+}
+
+.widget_categories li {
+    display: inline-block;
+    margin: 0 1px 4px 0;
+    padding: 3px 6px 3px 9px;
+    font-size: 10px !important;
+    background-color: #efefed;
+    color: #777;
+}
+
+.widget_categories li.cat-item a {
+    text-decoration: none;
+    font-size: 10pt !important;
+    color: #292929 !important;
+}
+
+.widget_categories li.cat-item:hover,
+.widget_categories li.cat-item:active {
+    background-color: #fff;
+}
