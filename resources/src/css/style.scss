@@ -1,13 +1,15 @@
 @charset 'utf-8';
-
+// setting
+@import '_setting';
 // Foundation
 @import 'foundation/body/_body';
-
+@import 'foundation/main/_main';
 // layout
 @import 'layout/container/_container';
 @import 'layout/navigation/_navigation';
 @import 'layout/entry/_entry_basis';
 @import 'layout/sidebar-widet-area/categorize';
-
+@import 'layout/header/_header';
+@import 'layout/sidebar/_sidebar';
 // library
 @import 'lib/perfect-scrollbar/_perfect-scrollbar';

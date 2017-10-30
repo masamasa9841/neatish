@@ -1,0 +1,12 @@
+$_base-font-size-px: 14px !default;
+$_base-background-color: #fff;
+$_base-navigation-width: 260px;
+$_base-navigation-color: #600358;
+$_base-border-color: #E9E9E9;
+$_base-header-height: 60px;
+$_base-animation-speed: .25s;
+@mixin mini-display {
+    @media screen and (max-width: 900px) {
+        @content;
+    }
+}

@@ -1,0 +1,14 @@
+#main {
+    background: #fff;
+    min-height: 1400px;
+    width: 750px;
+    float: left;
+    & p {
+        margin-bottom: 1em;
+        line-height: 1.9;
+    }
+    & .inner {
+        // 上　右　下　左
+        padding: 60px 60px 0px 60px;
+    }
+}

@@ -1,0 +1,83 @@
+/* サイズ調整 */
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* サイトロゴ */
+
+#global-head {
+    position: fixed;
+    width: 100%; // 画面いっぱい
+    line-height: $_base-header-height;
+    padding-left: 60px; //サイト名の位置調整
+    background: $_base-background-color;
+    border-bottom: 1px solid $_base-border-color;
+    & a {
+        text-decoration: none; // 下線を消す
+        color: $_base-navigation-color; // 文字色
+    }
+    @include mini-display {
+        // center
+        text-align: center;
+        padding-left: 0px;
+    }
+}
+
+
+/* ハンバーガーボタン */
+
+#nav-toggle {
+    position: fixed;
+    z-index: 1000; // 絶対に前に出るマン
+    & div {
+        position: absolute;
+        cursor: pointer;
+        width: 32px;
+        top: 15px;
+        left: 15px;
+        height: 32px;
+    }
+    & span {
+        width: 100%;
+        height: 2px;
+        left: 0;
+        display: block;
+        position: absolute;
+        background: #fff;
+        -webkit-transition: .35s ease-in-out;
+        -moz-transition: .35s ease-in-out;
+        transition: .35s ease-in-out;
+        &:nth-child(1) {
+            top: 1px;
+        }
+        &:nth-child(2) {
+            top: 11px;
+        }
+        &:nth-child(3) {
+            top: 22px;
+        }
+        .close & {
+            background: #350031;
+        }
+        @include mini-display {
+            background: #350031;
+        }
+    }
+}
+
+
+/* menu */
+
+#menu {
+    position: fixed;
+    width: $_base-navigation-width;
+    background-color: #350031;
+    text-align: center; //真ん中
+    color: $_base_background-color;
+    line-height: $_base-header-height;
+    font-size: 20px;
+    border-bottom: 1px solid $_base-border-color;
+}

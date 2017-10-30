@@ -1,11 +1,15 @@
 #container {
     margin-left: $_base-navigation-width;
+    -moz-transition: margin-left $_base-animation-speed linear;
+    -webkit-transition: margin-left $_base-animation-speed linear;
+    transition: margin-left $_base-animation-speed linear;
     position: relative;
     width: 100%;
-
-}
-#container, #brand-logo {
-	-moz-transition: margin-left .25s linear;
-	-webkit-transition: margin-left .25s linear;
-	transition: margin-left .25s linear;
+    z-index: 900;
+    .close & {
+        margin-left: 0;
+    }
+    @include mini-display {
+        margin-left: 0;
+    }
 }

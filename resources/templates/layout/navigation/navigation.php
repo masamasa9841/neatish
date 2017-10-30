@@ -10,7 +10,7 @@
 <!-- hamburger button -->
 
 <!-- Navigation -->
-<aside id="sidebar" class="scroll">
+<aside id="navigation" class="scroll">
   <nav id="global-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
     <?php
       wp_nav_menu();
