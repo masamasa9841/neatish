@@ -6,6 +6,12 @@ $_base-border-color: #E9E9E9;
 $_base-header-height: 60px;
 $_base-animation-speed: .25s;
 @mixin mini-display {
+    @media screen and (max-width: 1300px) {
+        @content;
+    }
+}
+
+@mixin mobile {
     @media screen and (max-width: 900px) {
         @content;
     }
