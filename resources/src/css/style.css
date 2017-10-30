@@ -269,9 +269,9 @@ header h1 {
   display: block;
   position: absolute;
   background: #fff;
-  -webkit-transition: .35s ease-in-out;
-  -moz-transition: .35s ease-in-out;
-  transition: .35s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 #nav-toggle span:nth-child(1) {

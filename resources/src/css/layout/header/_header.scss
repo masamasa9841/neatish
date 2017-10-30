@@ -47,9 +47,9 @@ header h1 {
         display: block;
         position: absolute;
         background: #fff;
-        -webkit-transition: .35s ease-in-out;
-        -moz-transition: .35s ease-in-out;
-        transition: .35s ease-in-out;
+        -webkit-transition: $_base-animation-speed ease-in-out;
+        -moz-transition: $_base-animation-speed ease-in-out;
+        transition: $_base-animation-speed ease-in-out;
         &:nth-child(1) {
             top: 1px;
         }
