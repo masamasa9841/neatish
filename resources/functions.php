@@ -30,3 +30,7 @@ function get_the_custom_excerpt($content, $length) {
   $content =  mb_substr($content,0,$length);//文字列を指定した長さで切り取る
   return $content;
 }
+function my_setup_theme() {
+    add_theme_support( 'title-tag' );
+}
+add_action( 'after_setup_theme', 'my_setup_theme' );
