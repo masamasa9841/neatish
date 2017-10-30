@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* wordpressの上のツールバー問題 */
 @media screen and (max-width: 600px) {
   #wpadminbar {
     position: fixed;
