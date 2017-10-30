@@ -11,6 +11,7 @@
 <body <?php body_class(); ?>>
 
 <?php get_template_part('templates/layout/navigation/navigation');//ナヴィゲーションの設定テンプレート?>
+<?php get_template_part('template-parts/searchform');//ナヴィゲーションの設定テンプレート?>
 <!-- header -->
 <div id="container">
     <header id="global-head">

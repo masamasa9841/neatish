@@ -6,6 +6,8 @@
     position: relative;
     width: 100%;
     z-index: 900;
+    background: $_base-background-color;
+    height: 95vh;
     .close & {
         margin-left: 0;
     }
