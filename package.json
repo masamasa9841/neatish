@@ -14,5 +14,9 @@
   "bugs": {
     "url": "https://github.com/masamasa9841/neatish/issues"
   },
-  "homepage": "https://github.com/masamasa9841/neatish#readme"
+  "homepage": "https://github.com/masamasa9841/neatish#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "tslint": "^5.8.0"
+  }
 }
