@@ -9,7 +9,6 @@ body {
 
 #main {
   background: #fff;
-  min-height: 1400px;
   width: 750px;
   float: left;
 }
@@ -309,12 +308,21 @@ header h1 {
   border-bottom: 1px solid #E9E9E9;
 }
 
-#hoge {
-  position: fixed;
-  bottom: 0;
+#global-footer {
+  clear: both;
+  color: #600358;
   width: 100%;
-  height: 100px;
-  position: absolute;
+  line-height: 30px;
+  padding-left: 60px;
+  border-top: 2px solid #E9E9E9;
+  background: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  #global-footer {
+    text-align: center;
+    padding-left: 0px;
+  }
 }
 
 #sidebar {

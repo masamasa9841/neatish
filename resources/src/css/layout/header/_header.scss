@@ -19,7 +19,7 @@ header h1 {
         text-decoration: none; // 下線を消す
         color: $_base-navigation-color; // 文字色
     }
-    @include mini-display {
+    @include mobile {
         // center
         text-align: center;
         padding-left: 0px;
