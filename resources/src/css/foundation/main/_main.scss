@@ -10,4 +10,7 @@
         // 上　右　下　左
         padding: 60px 60px 0px 60px;
     }
+    @include mobile {
+        width: 100%;
+    }
 }

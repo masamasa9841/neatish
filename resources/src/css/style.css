@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@media screen and (max-width: 600px) {
+  #wpadminbar {
+    position: fixed;
+  }
+}
+
 body {
   font-size: 14px;
   font-family: 'Lato', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
@@ -20,6 +26,12 @@ body {
 
 #main .inner {
   padding: 60px 60px 0px 60px;
+}
+
+@media screen and (max-width: 900px) {
+  #main {
+    width: 100%;
+  }
 }
 
 #container {
@@ -136,7 +148,7 @@ body {
   color: #fff;
 }
 
-.entry-header .entry-title {
+.entry-title {
   font-size: 28px;
   line-height: 1.2;
   font-weight: normal;
@@ -148,8 +160,16 @@ body {
   text-decoration: none;
 }
 
+@media screen and (max-width: 900px) {
+  .entry-title {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
+
 article {
-  border-bottom: 2px double #F3F3F3;
+  border-bottom: 2px double #E9E9E9;
   margin-bottom: 28px;
   padding-bottom: 24px;
   word-wrap: break-word;
@@ -161,20 +181,36 @@ article {
 .excerpt-thumb {
   margin: 8px 24px 12px 0;
   float: left;
-  /* 画像の回り込み */
+}
+
+@media screen and (max-width: 900px) {
+  .excerpt-thumb {
+    float: none;
+  }
 }
 
 /* サムネイル */
 .entry-thumnail {
   width: 200px;
   height: 140px;
-  border: 1px solid #F3F3F3;
+  border: 1px solid #E9E9E9;
   display: block;
-  /* リンクエラー用 */
+}
+
+@media screen and (max-width: 900px) {
+  .entry-thumnail {
+    margin: 0 auto;
+  }
 }
 
 .entry-summary .read-more {
   display: inline-block;
+}
+
+@media screen and (max-width: 900px) {
+  .entry-summary p {
+    text-align: left;
+  }
 }
 
 .read-more a {
@@ -186,7 +222,6 @@ article {
 .entry-meta {
   color: #757575;
   clear: left;
-  /* 回り込み解除 */
 }
 
 .entry-meta > span a {
