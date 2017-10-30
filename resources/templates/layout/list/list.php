@@ -1,7 +1,7 @@
 <div id="list" role="main">
     <?php if (have_posts()) :
     while (have_posts()) : the_post(); ?>
-    <article>
+    <article class="entry-article">
         <header class="entry-header">
         <!-- blog-title -->
         <h2 class="entry-title"><a href="<?php the_permalink(); ?>"title="<?php the_title_attribute(); ?>"> <?php the_title_attribute(); ?></a></h2>

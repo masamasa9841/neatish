@@ -36,6 +36,29 @@ body {
   }
 }
 
+.article h1 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 117%;
+}
+
+#article-info {
+  border: 3px solid #E9E9E9;
+  margin-bottom: 20px;
+}
+
+#article-info h4 {
+  background: #E9E9E9;
+  margin: 0;
+  font-size: 20px;
+  padding: .75rem 1.25rem;
+}
+
+#article-info p {
+  line-height: 1;
+}
+
 #container {
   margin-left: 260px;
   -moz-transition: margin-left 0.25s linear;
@@ -172,7 +195,7 @@ body {
   }
 }
 
-article {
+.entry-article {
   border-bottom: 2px double #E9E9E9;
   margin-bottom: 28px;
   padding-bottom: 24px;
