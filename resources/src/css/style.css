@@ -75,7 +75,7 @@ body {
   margin-left: 0;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   #container {
     margin-left: 0;
   }
@@ -92,7 +92,7 @@ body {
   background: #600358;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   #navigation {
     left: -260px;
     z-index: 910;
@@ -352,7 +352,7 @@ header h1 {
   background: #350031;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   #nav-toggle span {
     background: #350031;
   }

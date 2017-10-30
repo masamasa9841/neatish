@@ -6,7 +6,7 @@ $_base-navigation-width: 260px;
 $_base-header-height: 60px;
 $_base-animation-speed: .25s;
 @mixin mini-display {
-    @media screen and (max-width: 1300px) {
+    @media screen and (max-width: 1200px) {
         @content;
     }
 }
