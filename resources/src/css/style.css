@@ -65,7 +65,6 @@ body {
   -webkit-transition: margin-left 0.25s linear;
   transition: margin-left 0.25s linear;
   position: relative;
-  width: 100%;
   z-index: 900;
   background: #fff;
   height: 95vh;
@@ -373,7 +372,6 @@ header h1 {
 #global-footer {
   clear: both;
   color: #600358;
-  width: 100%;
   line-height: 30px;
   padding-left: 60px;
   border-top: 2px solid #E9E9E9;
