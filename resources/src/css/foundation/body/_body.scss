@@ -1,9 +1,9 @@
 body {
-    font: {
-        family: 'Lato', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
-        size: $_base-font-size-px;
-    }
-    background: $_base-background-color;
-    margin: 0;
-    padding: 0;
+  background: $_base-background-color;
+  font: {
+    family: 'Lato', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+    size: $_base-font-size-px;
+  }
+  margin: 0;
+  padding: 0;
 }
