@@ -13,7 +13,7 @@
       });
 
       // humburger button
-      $('#nav-toggle').on('click', function() {
+      $('.nav-toggle').on('click', function() {
         $('body').toggleClass('close');
       });
 

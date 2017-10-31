@@ -7,8 +7,8 @@
 }
 
 body {
-  font-size: 14px;
   font-family: 'Lato', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  font-size: 13px;
   background: #fff;
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ body {
 
 #main {
   background: #fff;
-  width: 750px;
+  width: 700px;
   min-height: 100%;
   float: left;
 }
@@ -27,10 +27,10 @@ body {
 }
 
 #main .inner {
-  padding: 60px 60px 0px 60px;
+  padding: 50px 50px 0px 50px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   #main {
     width: 100%;
   }
@@ -60,7 +60,7 @@ body {
 }
 
 #container {
-  margin-left: 260px;
+  margin-left: 220px;
   -moz-transition: margin-left 0.25s linear;
   -webkit-transition: margin-left 0.25s linear;
   transition: margin-left 0.25s linear;
@@ -80,97 +80,83 @@ body {
   }
 }
 
-/* nabigation */
-#navigation {
-  position: fixed;
-  margin-top: 61px;
-  width: 260px;
-  height: 100%;
-  overflow: hidden;
-  color: #afc3f2;
+.scroll {
   background: #600358;
+  height: 100%;
+  margin-top: 51px;
+  overflow: hidden;
+  position: fixed;
+  width: 220px;
 }
 
 @media screen and (max-width: 1200px) {
-  #navigation {
-    left: -260px;
-    z-index: 910;
-    -webkit-transition: 0.25s ease-in-out;
-    -moz-transition: 0.25s ease-in-out;
+  .scroll {
+    -o-transition: 0.25s ease-in-out;
     transition: 0.25s ease-in-out;
+    left: -220px;
+    z-index: 910;
   }
-  .close #navigation {
+  .close .scroll {
     left: 0;
   }
 }
 
-/* global-nav */
-#global-nav ul {
+.global-nav ul {
   list-style: none;
   margin-left: 0;
   padding: 0;
 }
 
-#global-nav a {
+.global-nav a {
+  -o-transition: color 0.25s linear;
+  transition: color 0.25s linear;
   color: #aeb4cb;
-  text-decoration: none;
   display: block;
   padding: 15px;
-  -moz-transition: color 0.25s linear;
-  -webkit-transition: color 0.25s linear;
-  transition: color 0.25s linear;
+  text-decoration: none;
 }
 
-#global-nav a:hover {
+.global-nav a:hover {
   background-color: #ffe8fd;
 }
 
-#global-nav > ul > li {
+.global-nav .sub-menu-head {
   position: relative;
 }
 
-#global-nav .sub-menu-head {
-  position: relative;
-}
-
-#global-nav .sub-menu-head:after {
-  content: "";
-  position: absolute;
-  top: 0;
+.global-nav .sub-menu-head::after {
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  border-right: 1px solid #E9E9E9;
+  border-top: 1px solid #E9E9E9;
   bottom: 0;
-  right: 18px;
+  content: '';
+  height: 8px;
   margin: auto;
+  position: absolute;
+  right: 18px;
+  top: 0;
+  transform: rotate(45deg);
   vertical-align: middle;
   width: 8px;
-  height: 8px;
-  border-top: 1px solid #E9E9E9;
-  border-right: 1px solid #E9E9E9;
-  -moz-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
 }
 
-#global-nav .is-active .sub-menu-head:after {
-  -moz-transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
+.global-nav .is-active .sub-menu-head::after {
   transform: rotate(135deg);
 }
 
-#global-nav .sub-menu {
+.global-nav .sub-menu {
   background: #350031;
-  padding: 10px 0;
   display: none;
+  padding: 10px 0;
 }
 
-#global-nav .sub-menu a {
+.global-nav .sub-menu a {
   color: #aeb4cb;
   padding: 8px 15px;
 }
 
-#global-nav .sub-menu a:hover {
+.global-nav .sub-menu a:hover {
   color: #fff;
 }
 
@@ -186,7 +172,7 @@ body {
   text-decoration: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .entry-title {
     margin-bottom: 10px;
     margin-top: 10px;
@@ -209,7 +195,7 @@ body {
   float: left;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .excerpt-thumb {
     float: none;
   }
@@ -223,7 +209,7 @@ body {
   display: block;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .entry-thumnail {
     margin: 0 auto;
   }
@@ -233,7 +219,7 @@ body {
   display: inline-block;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .entry-summary p {
     text-align: left;
   }
@@ -280,115 +266,110 @@ body {
   background-color: #fff;
 }
 
-/* サイズ調整 */
 header h1 {
   margin: 0;
   padding: 0;
 }
 
-/* サイトロゴ */
-#global-head {
-  position: fixed;
-  width: 100%;
-  line-height: 60px;
-  padding-left: 60px;
+.global-head {
   background: #fff;
   border-bottom: 1px solid #E9E9E9;
+  line-height: 50px;
+  padding-left: 60px;
+  position: fixed;
+  width: 100%;
 }
 
-#global-head a {
-  text-decoration: none;
+.global-head a {
   color: #600358;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 900px) {
-  #global-head {
+@media screen and (max-width: 950px) {
+  .global-head {
+    padding-left: 0;
     text-align: center;
-    padding-left: 0px;
   }
 }
 
-/* ハンバーガーボタン */
-#nav-toggle {
+.nav-toggle {
   position: fixed;
   z-index: 1000;
 }
 
-#nav-toggle div {
-  position: absolute;
+.nav-toggle div {
   cursor: pointer;
-  width: 32px;
-  top: 15px;
-  left: 15px;
   height: 32px;
+  left: 15px;
+  position: absolute;
+  top: 15px;
+  width: 32px;
 }
 
-#nav-toggle span {
-  width: 100%;
+.nav-toggle span {
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  background: #fff;
+  display: block;
   height: 2px;
   left: 0;
-  display: block;
   position: absolute;
-  background: #fff;
-  -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-}
-
-#nav-toggle span:nth-child(1) {
-  top: 1px;
-}
-
-#nav-toggle span:nth-child(2) {
-  top: 11px;
-}
-
-#nav-toggle span:nth-child(3) {
-  top: 21px;
-}
-
-.close #nav-toggle span {
-  background: #350031;
+  width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
-  #nav-toggle span {
+  .nav-toggle span {
     background: #350031;
   }
 }
 
-/* menu */
-#menu {
-  position: fixed;
-  width: 260px;
-  background-color: #350031;
-  text-align: center;
-  color: #fff;
-  line-height: 60px;
-  font-size: 20px;
-  border-bottom: 1px solid #E9E9E9;
+.nav-toggle span:nth-child(1) {
+  top: 1px;
 }
 
-#global-footer {
+.nav-toggle span:nth-child(2) {
+  top: 11px;
+}
+
+.nav-toggle span:nth-child(3) {
+  top: 21px;
+}
+
+.close .nav-toggle span {
+  background: #350031;
+}
+
+.nav-menu-head {
+  background-color: #350031;
+  border-bottom: 1px solid #E9E9E9;
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  position: fixed;
+  text-align: center;
+  width: 220px;
+}
+
+.global-footer {
+  background: #fff;
+  border-top: 2px solid #E9E9E9;
   clear: both;
   color: #600358;
-  line-height: 30px;
+  line-height: 25px;
   padding-left: 60px;
-  border-top: 2px solid #E9E9E9;
-  background: #fff;
 }
 
-@media screen and (max-width: 900px) {
-  #global-footer {
+@media screen and (max-width: 950px) {
+  .global-footer {
+    padding-left: 0;
     text-align: center;
-    padding-left: 0px;
   }
 }
 
 #sidebar {
   padding-top: 60px;
   float: left;
-  width: 300px;
+  width: 250px;
 }
 
 /*
@@ -503,5 +484,3 @@ header h1 {
     overflow: auto !important;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

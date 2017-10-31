@@ -1,18 +1,31 @@
-$_base-font-size-px: 14px !default;
+$_base-font-size-px: 13px !default;
 $_base-background-color: #fff;
 $_base-navigation-color: #600358;
-$_base-border-color: #E9E9E9;
-$_base-navigation-width: 260px;
-$_base-header-height: 60px;
+$_base-submenu-color: #350031;
+$_base-border-color: #E9E9E9; // 短縮はしない
+$_base-navigation-width: 220px;
+$_base-sidebar-width: 250px;
+$_base-main-width: 700px;
+$_base-header-height: 50px;
 $_base-animation-speed: .25s;
 @mixin mini-display {
-    @media screen and (max-width: 1200px) {
-        @content;
-    }
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
 }
 
 @mixin mobile {
-    @media screen and (max-width: 900px) {
-        @content;
-    }
+  @media screen and (max-width: 950px) {
+    @content;
+  }
+}
+
+@mixin ease-in-out {
+  -o-transition: $_base-animation-speed ease-in-out;
+  transition: $_base-animation-speed ease-in-out;
+}
+
+@mixin linear {
+  -o-transition: color $_base-animation-speed linear;
+  transition: color $_base-animation-speed linear;
 }

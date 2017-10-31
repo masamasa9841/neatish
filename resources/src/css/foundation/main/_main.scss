@@ -1,6 +1,6 @@
 #main {
     background: #fff;
-    width: 750px;
+    width: $_base-main-width;
     min-height: 100%;
     float: left;
     & p {
@@ -9,7 +9,7 @@
     }
     & .inner {
         // 上　右　下　左
-        padding: 60px 60px 0px 60px;
+        padding: $_base-header-height $_base-header-height 0px $_base-header-height;
     }
     @include mobile {
         width: 100%;

@@ -1,6 +1,6 @@
 <!-- hamburger button -->
-<div id="menu">Menu</div>
-<div id="nav-toggle">
+<div class="nav-menu-head">Menu</div>
+<div class="nav-toggle">
   <div>
     <span></span>
     <span></span>
@@ -10,8 +10,8 @@
 <!-- hamburger button -->
 
 <!-- Navigation -->
-<aside id="navigation" class="scroll">
-  <nav id="global-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+<aside class="scroll">
+  <nav class="global-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
     <?php
       wp_nav_menu();
     ?>
