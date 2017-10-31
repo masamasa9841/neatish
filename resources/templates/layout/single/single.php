@@ -12,7 +12,7 @@
 
     <?php endwhile; ?>
 
-		<div class="card" id="article-info">
+		<div class="article-info">
 			<h4>Article Info</h4>
 						<p>Created: <?php the_date('c'); ?></p>
 						<p>Modified: <?php the_modified_date('c'); ?></p>

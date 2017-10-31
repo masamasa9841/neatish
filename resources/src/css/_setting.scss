@@ -26,6 +26,12 @@ $_base-animation-speed: .25s;
 }
 
 @mixin linear {
-  -o-transition: color $_base-animation-speed linear;
-  transition: color $_base-animation-speed linear;
+  -o-transition: margin-left $_base-animation-speed linear;
+  transition: margin-left $_base-animation-speed linear;
+}
+
+@mixin css3($property, $value, $style) {
+  @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+    #{$prefix}transition: #{$property} #{$value} #{$style};
+  }
 }

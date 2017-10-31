@@ -12,10 +12,10 @@
 
 <?php get_template_part('templates/layout/navigation/navigation');//ナヴィゲーションの設定テンプレート?>
 <!-- header -->
-<div id="container">
+<div class="container">
     <header class="global-head">
         <h1 id="brand-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
     </header>
-    <main id="main">
+    <main class="main-contents">
         <section class="inner">
             <body>

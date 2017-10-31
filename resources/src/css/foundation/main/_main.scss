@@ -1,17 +1,18 @@
-#main {
-    background: #fff;
-    width: $_base-main-width;
-    min-height: 100%;
-    float: left;
-    & p {
-        margin-bottom: 1em;
-        line-height: 1.9;
-    }
-    & .inner {
-        // 上　右　下　左
-        padding: $_base-header-height $_base-header-height 0px $_base-header-height;
-    }
-    @include mobile {
-        width: 100%;
-    }
+.main-contents {
+  background: #fff;
+  float: left;
+  min-height: 100%;
+  width: $_base-main-width;
+
+  & p {
+    line-height: 1.9;
+    margin-bottom: 1em;
+  }
+
+  & .inner {
+    padding: $_base-header-height $_base-header-height 0;
+  }
+  @include mobile {
+    width: 100%;
+  }
 }

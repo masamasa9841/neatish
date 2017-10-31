@@ -1,19 +1,23 @@
 @charset 'utf-8';
 // setting
-@import '_setting';
+@import 'setting';
+
 // wordpress
-@import 'wordpress/_wordpress';
+@import 'wordpress/wordpress';
+
 // Foundation
-@import 'foundation/body/_body';
-@import 'foundation/main/_main';
-@import 'foundation/element/_element';
+@import 'foundation/body/body';
+@import 'foundation/main/main';
+@import 'foundation/element/element';
+
 // layout
-@import 'layout/container/_container';
-@import 'layout/navigation/_navigation';
-@import 'layout/entry/_entry_basis';
+@import 'layout/container/container';
+@import 'layout/navigation/navigation';
+@import 'layout/entry/entry_basis';
 @import 'layout/sidebar-widet-area/categorize';
-@import 'layout/header/_header';
-@import 'layout/footer/_footer';
-@import 'layout/sidebar/_sidebar';
+@import 'layout/header/header';
+@import 'layout/footer/footer';
+@import 'layout/sidebar/sidebar';
+
 // library
-@import 'lib/perfect-scrollbar/_perfect-scrollbar';
+@import 'lib/perfect-scrollbar/perfect-scrollbar';

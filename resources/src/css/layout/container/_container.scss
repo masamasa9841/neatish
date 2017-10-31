@@ -1,16 +1,15 @@
-#container {
-    margin-left: $_base-navigation-width;
-    -moz-transition: margin-left $_base-animation-speed linear;
-    -webkit-transition: margin-left $_base-animation-speed linear;
-    transition: margin-left $_base-animation-speed linear;
-    position: relative;
-    z-index: 900;
-    background: $_base-background-color;
-    height: 95vh;
-    .close & {
-        margin-left: 0;
-    }
-    @include mini-display {
-        margin-left: 0;
-    }
+.container {
+  @include css3(margin-left, $_base-animation-speed, linear);
+  background: $_base-background-color;
+  height: 95vh;
+  margin-left: $_base-navigation-width;
+  position: relative;
+  z-index: 900;
+
+  .close & {
+    margin-left: 0;
+  }
+  @include mini-display {
+    margin-left: 0;
+  }
 }
