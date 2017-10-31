@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "* [GNU General Public License v2.0](http://www.gnu.org/licenses/gpl-2.0.html) ## Third-party resources ### perfect-scrollbar * License: MIT License * Source: https://github.com/utatti/perfect-scrollbar ### velocity * License: MIT License * Source: https://github.com/julianshapiro/velocity",
   "scripts": {
-    "build-sass": "node-sass -w --source-map true --output-style expanded resources/src/css/style.scss resources/src/css/style.css"
+    "build-sass": "node-sass -w --output-style expanded resources/src/css/style.scss resources/src/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,9 @@
   "devDependencies": {
     "node-sass": "^4.5.3",
     "tslint": "^5.8.0"
+  },
+  "dependencies": {
+    "bower": "^1.8.2",
+    "sass-lint": "^1.12.1"
   }
 }
