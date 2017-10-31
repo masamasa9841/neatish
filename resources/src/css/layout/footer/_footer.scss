@@ -1,13 +1,12 @@
-#global-footer {
-    clear: both; // 回り込み解除
-    color: $_base-navigation-color;
-    line-height: $_base-header-height / 2;
-    padding-left: 60px; //サイト名の位置調整
-    border-top: 2px solid $_base-border-color;
-    background: $_base-background-color;
-    @include mobile {
-        // center
-        text-align: center;
-        padding-left: 0px;
-    }
+.global-footer {
+  @include mobile {
+    padding-left: 0;
+    text-align: center; //center
+  }
+  background: $_base-background-color;
+  border-top: 2px solid $_base-border-color;
+  clear: both; // 回り込み解除
+  color: $_base-navigation-color;
+  line-height: $_base-header-height / 2;
+  padding-left: 60px; //サイト名の位置調整
 }
