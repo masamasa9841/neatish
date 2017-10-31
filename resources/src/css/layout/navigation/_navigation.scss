@@ -1,89 +1,78 @@
-/* nabigation */
+// nabigation
+.scroll {
+  @include mini-display {
+    @include ease-in-out;
+    left: -$_base-navigation-width;
+    z-index: 910;
 
-#navigation {
-    position: fixed;
-    margin-top: $_base-header-height + 1;
-    width: $_base-navigation-width;
-    height: 100%;
-    overflow: hidden;
-    color: #afc3f2;
-    background: $_base-navigation-color;
-    @include mini-display {
-        left: -$_base-navigation-width;
-        z-index: 910;
-        -webkit-transition: $_base-animation-speed ease-in-out;
-        -moz-transition: $_base-animation-speed ease-in-out;
-        transition: $_base-animation-speed ease-in-out;
-        .close & {
-            left: 0;
-        }
+    .close & {
+      left: 0;
     }
+  }
+  background: $_base-navigation-color;
+  height: 100%; // 下まで
+  margin-top: $_base-header-height + 1px;
+  overflow: hidden; // スライドバー必要不可避
+  position: fixed;
+  width: $_base-navigation-width;
 }
 
+// global-nav
+.global-nav {
+  & ul {
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+  }
 
-/* global-nav */
+  & a {
+    @include linear;
+    color: #aeb4cb; // 文字
+    display: block;
+    padding: 15px;
+    text-decoration: none; // 下線
 
-#global-nav {
-    & ul {
-        list-style: none;
-        margin-left: 0;
-        padding: 0;
+    &:hover {
+      background-color: #ffe8fd;
     }
+  }
+
+  & .sub-menu-head {
+    position: relative;
+
+    &::after {
+      @include ease-in-out;
+      border-right: 1px solid $_base-border-color;
+      border-top: 1px solid $_base-border-color;
+      bottom: 0;
+      content: '';
+      height: 8px;
+      margin: auto;
+      position: absolute;
+      right: 18px;
+      top: 0;
+      transform: rotate(45deg);
+      vertical-align: middle;
+      width: 8px;
+    }
+  }
+
+  & .is-active .sub-menu-head::after {
+    transform: rotate(135deg); // 回す
+  }
+
+  & .sub-menu {
+    background: $_base-submenu-color;
+    display: none; // 最初は隠す
+    padding: 10px 0;
+
     & a {
-        // 文字
-        color: #aeb4cb;
-        text-decoration: none; // 下線
-        display: block;
-        padding: 15px;
-        -moz-transition: color $_base-animation-speed linear;
-        -webkit-transition: color $_base-animation-speed linear;
-        transition: color $_base-animation-speed linear;
-        &:hover {
-            background-color: #ffe8fd;
-        }
+      color: #aeb4cb;
+      padding: 8px 15px;
+
+      &:hover {
+        color: #fff;
+      }
     }
-    >ul>li {
-        // いらないかも
-        position: relative;
-    }
-    & .sub-menu-head {
-        position: relative;
-        &:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 18px;
-            margin: auto;
-            vertical-align: middle;
-            width: 8px;
-            height: 8px;
-            border-top: 1px solid $_base-border-color;
-            border-right: 1px solid $_base-border-color;
-            -moz-transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-            -webkit-transition: $_base-animation-speed ease-in-out;
-            -moz-transition: $_base-animation-speed ease-in-out;
-            transition: $_base-animation-speed ease-in-out;
-        }
-    }
-    & .is-active .sub-menu-head:after {
-        // 回す
-        -moz-transform: rotate(135deg);
-        -webkit-transform: rotate(135deg);
-        transform: rotate(135deg);
-    }
-    & .sub-menu {
-        background: #350031;
-        padding: 10px 0;
-        display: none; // 最初は隠す
-        & a {
-            color: #aeb4cb;
-            padding: 8px 15px;
-            &:hover {
-                color: #fff;
-            }
-        }
-    }
+  }
 }
