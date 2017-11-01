@@ -27,13 +27,13 @@
 
   & a {
     @include linear;
-    color: #aeb4cb; // 文字
+    color: $_base-navigation-font-color; // 文字
     display: block;
     padding: 15px;
     text-decoration: none; // 下線
 
     &:hover {
-      background-color: #ffe8fd;
+      background-color: $_base-navigation-color-hover;
     }
   }
 
@@ -67,12 +67,8 @@
     padding: 10px 0;
 
     & a {
-      color: #aeb4cb;
+      color: $_base-navigation-font-color;
       padding: 8px 15px;
-
-      &:hover {
-        color: #fff;
-      }
     }
   }
 }
