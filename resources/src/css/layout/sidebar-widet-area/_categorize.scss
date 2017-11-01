@@ -1,0 +1,39 @@
+$_wh-size: 15px;
+.widget_categories {
+
+  & ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  & li {
+    background: $_base-navigation-color;
+    margin-bottom: 3px;
+
+    a {
+      color: $_base-navigation-font-color; // 文字
+      display: block;
+      padding: $_wh-size 0 $_wh-size $_wh-size;
+      text-decoration: none; // 下線
+
+      &:hover {
+        background-color: $_base-navigation-color-hover;
+      }
+    }
+
+    & .cat_count {
+      background-color: $_base-submenu-color;
+      color: $_base-navigation-font-color;
+      float: right;
+      font-weight: bold;
+      line-height: $_wh-size * 2 + 20px;
+      position: relative;
+      text-align: center;
+      top: -$_wh-size;
+      width: 40px;
+    }
+  }
+}
+
+

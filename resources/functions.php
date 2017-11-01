@@ -30,3 +30,13 @@ function get_the_custom_excerpt($content, $length) {
   $content =  mb_substr($content,0,$length);//文字列を指定した長さで切り取る
   return $content;
 }
+
+
+
+function wp_list_categories_archives( $output ) {
+	$output = str_replace("&nbsp;", " ", $output);
+	$output = preg_replace('/<\/a> \(([0-9]*)\)/', ' <sapn class="cat_count">${1}</span></a>', $output);
+	return $output;
+}
+add_filter( 'wp_list_categories', 'wp_list_categories_archives', 10, 2 );
+add_filter( 'get_archives_link', 'wp_list_categories_archives', 10, 2 );
