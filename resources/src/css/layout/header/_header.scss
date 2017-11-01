@@ -12,6 +12,7 @@ header h1 {
   padding-left: 60px; //サイト名の位置調整
   position: fixed;
   width: 100%; // 画面いっぱい
+  z-index: 1000;
 
   & a {
     color: $_base-navigation-color; // 文字色
