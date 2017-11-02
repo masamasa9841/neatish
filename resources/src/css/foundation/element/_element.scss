@@ -9,17 +9,18 @@
 }
 
 .article-info {
-  border: 3px solid $_base-border-color;
+  border: .3em solid $_base-border-color;
   margin-bottom: 20px;
 
   & h4 {
     background: $_base-border-color;
-    font-size: 20px;
+    font-size: 1.8em;
     margin: 0;
-    padding: .75rem 1.25rem;
+    padding: .6em;
   }
 
-  & p {
-    line-height: 1;
+  & p, span {
+    line-height: .6em;
+    padding-left: .6em;
   }
 }

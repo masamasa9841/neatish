@@ -50,19 +50,20 @@ body {
 }
 
 .article-info {
-  border: 3px solid #e9e9e9;
+  border: 0.3em solid #e9e9e9;
   margin-bottom: 20px;
 }
 
 .article-info h4 {
   background: #e9e9e9;
-  font-size: 20px;
+  font-size: 1.8em;
   margin: 0;
-  padding: .75rem 1.25rem;
+  padding: .6em;
 }
 
-.article-info p {
-  line-height: 1;
+.article-info p, .article-info span {
+  line-height: .6em;
+  padding-left: .6em;
 }
 
 .container {
@@ -242,6 +243,10 @@ body {
   color: #333;
   padding: 2px;
   text-decoration: none;
+}
+
+.entry-body {
+  padding-top: 50px;
 }
 
 .widget_categories ul {
