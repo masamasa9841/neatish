@@ -1,8 +1,8 @@
-$_wh-size: 15px;
+$_wh-size: 1.1em;
 .widget_categories {
 
   & ul {
-    font-size: 1.2em;
+    font-size: $_wh-size;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -24,11 +24,10 @@ $_wh-size: 15px;
     }
 
     & .cat_count {
-      background-color: $_base-submenu-color;
       color: $_base-navigation-font-color;
       float: right;
       font-weight: bold;
-      line-height: $_wh-size * 2 + 16 * 1.2; // emの計算なので16をかける。
+      line-height: $_wh-size * 3;
       position: relative;
       text-align: center;
       top: -$_wh-size;
