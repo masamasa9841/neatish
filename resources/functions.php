@@ -1,6 +1,7 @@
 <?php
 include 'lib/scripts.php'; // スクリプト関係の関数
 include 'template-parts/widet-categorize.php'; // widetエリアのカテゴリ
+// include 'template-parts/widet-tagcloud.php'; // widetエリアのタグクラウド
 
 //サムネイルサイズ
 add_image_size('thumb320', 320, 180, true);
