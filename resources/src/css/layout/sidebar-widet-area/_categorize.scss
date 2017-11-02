@@ -5,6 +5,7 @@ $_wh-size: 15px;
     list-style: none;
     margin: 0;
     padding: 0;
+    font-size: 1.2em;
   }
 
   & li {
@@ -27,7 +28,7 @@ $_wh-size: 15px;
       color: $_base-navigation-font-color;
       float: right;
       font-weight: bold;
-      line-height: $_wh-size * 2 + 20px;
+      line-height: $_wh-size * 2 + 16 * 1.2;
       position: relative;
       text-align: center;
       top: -$_wh-size;
