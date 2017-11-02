@@ -1,9 +1,17 @@
 .entry-body {
-  padding-top: $_base-header-height;
+  padding-top: $_base-header-height / 2;
+  width: $_base-main-width - $_base-header-height;
+
+  @include mobile {
+    width: 100%;
+  }
 
   & img{
+    @include mobile {
+      max-width: 100%;
+    }
     height: auto;
-    max-width: $_base-main-width;
+    max-width: $_base-main-width - $_base-header-height;
 
   }
 }

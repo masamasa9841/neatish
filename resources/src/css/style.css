@@ -18,11 +18,18 @@ body {
   float: left;
   max-width: 1000px;
   min-height: 100%;
+  min-width: 700px;
 }
 
 @media screen and (max-width: 950px) {
   .main-contents {
     width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .main-contents {
+    min-width: auto;
   }
 }
 
@@ -246,12 +253,25 @@ body {
 }
 
 .entry-body {
-  padding-top: 50px;
+  padding-top: 25px;
+  width: 650px;
+}
+
+@media screen and (max-width: 950px) {
+  .entry-body {
+    width: 100%;
+  }
 }
 
 .entry-body img {
   height: auto;
-  max-width: 700px;
+  max-width: 650px;
+}
+
+@media screen and (max-width: 950px) {
+  .entry-body img {
+    max-width: 100%;
+  }
 }
 
 .widget_categories ul {
