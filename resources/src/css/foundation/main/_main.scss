@@ -1,11 +1,12 @@
 .main-contents {
   @include mobile {
-    width: 100%;
+    width: 100%!important;
   }
+  // widthはjsで取得
   background: $_base-background-color;
   float: left;
+  max-width: 1000px;
   min-height: 100%;
-  width: $_base-main-width;
 
   & p {
     line-height: 1.9;
@@ -16,6 +17,7 @@
     @include mobile {
       padding: $_base-header-height 10px 0;
     }
-    padding: $_base-header-height $_base-header-height 0;
+    padding-left: $_base-header-height;
+    padding-top: $_base-header-height;
   }
 }
