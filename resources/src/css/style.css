@@ -281,11 +281,12 @@ body {
 
 .tagcloud a {
   background: #600358;
-  border-radius: 5px;
   color: #e4e4e4;
+  display: inline-block;
   font-size: 1em !important;
   line-height: 1em;
-  padding: 5px;
+  margin-top: 3px;
+  padding: 6px;
   text-decoration: none;
 }
 
