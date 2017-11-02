@@ -9,7 +9,7 @@ header h1 {
   background: $_base-background-color;
   border-bottom: 1px solid $_base-border-color;
   line-height: $_base-header-height;
-  padding-left: 60px; //サイト名の位置調整
+  padding-left: $_base-header-height; //サイト名の位置調整
   position: fixed;
   width: 100%; // 画面いっぱい
   z-index: 1000;
