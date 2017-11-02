@@ -28,7 +28,7 @@ $_wh-size: 15px;
       color: $_base-navigation-font-color;
       float: right;
       font-weight: bold;
-      line-height: $_wh-size * 2 + 16 * 1.2;
+      line-height: $_wh-size * 2 + 16 * 1.2; // emの計算なので16をかける。
       position: relative;
       text-align: center;
       top: -$_wh-size;
