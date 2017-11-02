@@ -14,7 +14,7 @@
 
   & .inner {
     @include mobile {
-      padding: 10px 10px 0;
+      padding: $_base-header-height 10px 0;
     }
     padding: $_base-header-height $_base-header-height 0;
   }
