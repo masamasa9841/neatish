@@ -11,6 +11,7 @@ $_wh-size: 1em;
 
   & li {
     background: $_base-navigation-color;
+    line-height: $_wh-size;
     margin-bottom: 3px;
 
     a {

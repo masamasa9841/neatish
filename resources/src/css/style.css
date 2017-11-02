@@ -253,6 +253,7 @@ body {
 
 .widget_categories li {
   background: #600358;
+  line-height: 1em;
   margin-bottom: 3px;
 }
 
