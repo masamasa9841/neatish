@@ -5,12 +5,21 @@
     background: $_base-navigation-color;
     border-radius: 5px;
     color: $_base-navigation-font-color;
+    font-size: 1em!important;
+    line-height: 1em;
     padding: 5px;
     text-decoration: none;
 
     &:hover {
       background: $_base-navigation-color-hover;
     }
+
+    &::before {
+      content: '\f02b'; // 絵文字
+      font-family: 'FontAwesome';
+      padding-right: 4px;
+
+    }
+
   }
 }
-
