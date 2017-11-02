@@ -245,7 +245,7 @@ body {
 }
 
 .widget_categories ul {
-  font-size: 1.1em;
+  font-size: 1em;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -259,7 +259,7 @@ body {
 .widget_categories li a {
   color: #e4e4e4;
   display: block;
-  padding: 1.1em 0 1.1em 1.1em;
+  padding: 1em 0 1em 1em;
   text-decoration: none;
 }
 
@@ -271,10 +271,10 @@ body {
   color: #e4e4e4;
   float: right;
   font-weight: bold;
-  line-height: 3.3em;
+  line-height: 3em;
   position: relative;
   text-align: center;
-  top: -1.1em;
+  top: -1em;
   width: 40px;
 }
 
