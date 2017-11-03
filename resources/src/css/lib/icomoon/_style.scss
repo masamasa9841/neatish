@@ -1,100 +1,150 @@
+$fa-font-path: '../fonts' !default;
 @font-face {
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?-qz7pb2');
-	src:url('../fonts/icomoon.eot?#iefix-qz7pb2') format('embedded-opentype'),
-		url('../fonts/icomoon.woff?-qz7pb2') format('woff'),
-		url('../fonts/icomoon.ttf?-qz7pb2') format('truetype'),
-		url('../fonts/icomoon.svg?-qz7pb2#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font: {
+    family: 'icomoon';
+    style: normal;
+    weight: normal;
+  }
+  src: url('#{$fa-font-path}/icomoon.eot?-qz7pb2');
+  src: url('#{$fa-font-path}/icomoon.eot?#iefix-qz7pb2') format('embedded-opentype'),
+  url('#{$fa-font-path}/icomoon.woff?-qz7pb2') format('woff'),
+  url('#{$fa-font-path}/icomoon.ttf?-qz7pb2') format('truetype'),
+  url('#{$fa-font-path}/icomoon.svg?-qz7pb2#icomoon') format('svg');
 }
 
-[class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+[class^='icon-'],
+[class*=' icon-'] {
+  // Better Font Rendering
+  // -moz-osx-font-smoothing: grayscale;
+  // -webkit-font-smoothing: antialiased;
+  font: {
+    family: 'icomoon';
+    style: normal;
+    variant: normal;
+    weight: normal;
+  }
+  line-height: 1;
+  text-transform: none;
 }
 
-.icon-evernote:before {
-	content: "\e004";
-}
-.icon-feedly:before {
-	content: "\e007";
-}
-.icon-pocket:before {
-	content: "\e008";
-}
-.icon-line:before {
-	content: "\e009";
-}
-.icon-hatena:before {
-	content: "\e00a";
-}
-.icon-feedly-square:before {
-	content: "\e601";
-}
-.icon-googleplus:before {
-	content: "\e608";
-}
-.icon-facebook:before {
-	content: "\e60d";
-}
-.icon-instagram:before {
-	content: "\e610";
-}
-.icon-twitter:before {
-	content: "\e611";
-}
-.icon-feed:before {
-	content: "\e614";
-}
-.icon-youtube:before {
-	content: "\e617";
-}
-.icon-flickr2:before {
-	content: "\e61e";
-}
-.icon-githubmark:before {
-	content: "\e626";
-}
-.icon-github:before {
-	content: "\e627";
-}
-.icon-wordpress:before {
-	content: "\e629";
-}
-.icon-tumblr:before {
-	content: "\e62d";
-}
-.icon-yahoo:before {
-	content: "\e62f";
-}
-.icon-apple:before {
-	content: "\e631";
-}
-.icon-android:before {
-	content: "\e633";
-}
-.icon-windows:before {
-	content: "\e634";
-}
-.icon-windows8:before {
-	content: "\e635";
-}
-.icon-skype:before {
-	content: "\e636";
-}
-.icon-delicious:before {
-	content: "\e638";
-}
-.icon-pinterest:before {
-	content: "\e63a";
+.icon {
+  &-evernote { &::before {
+      content: '\e004';
+    }
+  }
+
+  &-pocket { &::before {
+      content: '\e008';
+    }
+  }
+
+  &-line { &::before {
+      content: '\e009';
+    }
+  }
+
+  &-hatena { &::before {
+      content: '\e00a';
+    }
+  }
+
+  &-feedly-square { &::before {
+      content: '\e601';
+    }
+  }
+
+  &-googleplus { &::before {
+      content: '\e608';
+    }
+  }
+
+  &-facebook { &::before {
+      content: '\e60d';
+    }
+  }
+
+  &-instagram { &::before {
+      content: '\e610';
+    }
+  }
+
+  &-twitter { &::before {
+      content: '\e611';
+    }
+  }
+
+  &-feed { &::before {
+      content: '\e614';
+    }
+  }
+
+  &-youtube { &::before {
+      content: '\e617';
+    }
+  }
+
+  &-flickr2 { &::before {
+      content: '\e61e';
+    }
+  }
+
+  &-githubmark { &::before {
+      content: '\e626';
+    }
+  }
+
+  &-github { &::before {
+      content: '\e627';
+    }
+  }
+
+  &-wordpress { &::before {
+      content: '\e629';
+    }
+  }
+
+  &-tumblr { &::before {
+      content: '\e62d';
+    }
+  }
+
+  &-yahoo { &::before {
+      content: '\e62f';
+    }
+  }
+
+  &-apple { &::before {
+      content: '\e631';
+    }
+  }
+
+  &-android { &::before {
+      content: '\e633';
+    }
+  }
+
+  &-windows { &::before {
+      content: '\e634';
+    }
+  }
+
+  &-windows8 { &::before {
+      content: '\e635';
+    }
+  }
+
+  &-skype { &::before {
+      content: '\e636';
+    }
+  }
+
+  &-delicious { &::before {
+      content: '\e638';
+    }
+  }
+
+  &-pinterest { &::before {
+      content: '\e63a';
+    }
+  }
 }
