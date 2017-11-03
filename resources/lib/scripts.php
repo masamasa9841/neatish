@@ -13,6 +13,12 @@ if ( !function_exists( 'add_filis' ) ):
 					array( 'jquery' )
 				);
 
+				wp_enqueue_script(
+					'share-count',
+					get_stylesheet_directory_uri() . '/src/js/share-count.js',
+					array( 'jquery' )
+				);
+
     }
 endif;
 add_action( 'wp_enqueue_scripts', 'add_filis', 1 );

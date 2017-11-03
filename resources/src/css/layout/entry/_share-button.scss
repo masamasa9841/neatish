@@ -16,12 +16,13 @@ $_logo-font-size: 32px;
     @include mobile { // mobileだったら、横表示
       float: left;
     }
-
     list-style-type: none;
     margin-right: 5px;
     padding-right: 5px;
+    position: relative;
 
     & a {
+      color: #000;
       font-size: $_logo-font-size;
       text-decoration: none;
 
@@ -32,11 +33,18 @@ $_logo-font-size: 32px;
   }
 }
 
+.social-count {
+  bottom: 0;
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+}
+
 // fontの色設定
-ul.web-logo-font a.twitter-btn-icon-link{color:#55ACEE;}
-ul.web-logo-font a.facebook-btn-icon-link{color:#3C5A99;}
-ul.web-logo-font a.google-plus-btn-icon-link{color:#DD4B39;}
-ul.web-logo-font a.hatena-btn-icon-link{color:#3C7DD1;}
-ul.web-logo-font a.pocket-btn-icon-link{color:#EE4257;}
-ul.web-logo-font a.line-btn-icon-link{color:#00C300;}
-ul.web-logo-font a.feedly-btn-icon-link{color:#2BB24C}
+//ul.web-logo-font a.twitter-btn-icon-link{color:#55ACEE;}
+//ul.web-logo-font a.facebook-btn-icon-link{color:#3C5A99;}
+//ul.web-logo-font a.google-plus-btn-icon-link{color:#DD4B39;}
+//ul.web-logo-font a.hatena-btn-icon-link{color:#3C7DD1;}
+//ul.web-logo-font a.pocket-btn-icon-link{color:#EE4257;}
+//ul.web-logo-font a.line-btn-icon-link{color:#00C300;}
+//ul.web-logo-font a.feedly-btn-icon-link{color:#2BB24C}
