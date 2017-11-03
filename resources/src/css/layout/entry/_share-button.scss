@@ -1,0 +1,30 @@
+.web-logo-font {
+  font-family: sans-serif;
+  padding: 0;
+
+  & li {
+    float: left;
+    list-style-type: none;
+    margin-right: 5px;
+    padding-right: 5px;
+
+    & a {
+      // color: $_base-navigation-color;
+      font-size: 40px;
+      text-decoration: none;
+
+      & :hover { // ネストが深くて警告が出るが、無視
+        opacity: .6;
+      }
+    }
+  }
+}
+
+// fontの色設定
+ul.web-logo-font a.twitter-btn-icon-link{color:#55ACEE;}
+ul.web-logo-font a.facebook-btn-icon-link{color:#3C5A99;}
+ul.web-logo-font a.google-plus-btn-icon-link{color:#DD4B39;}
+ul.web-logo-font a.hatena-btn-icon-link{color:#3C7DD1;}
+ul.web-logo-font a.pocket-btn-icon-link{color:#EE4257;}
+ul.web-logo-font a.line-btn-icon-link{color:#00C300;}
+ul.web-logo-font a.feedly-btn-icon-link{color:#2BB24C}
