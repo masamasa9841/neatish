@@ -1,16 +1,28 @@
+$_logo-font-size: 32px;
+
 .web-logo-font {
+  @include mobile { // mobileだったら、横表示
+    margin: 0;
+    position: inherit;
+    top: 0;
+  }
   font-family: sans-serif;
+  margin-left: -$_base-header-height + ($_base-header-height - $_logo-font-size) / 2;
   padding: 0;
+  position: fixed;
+  top: $_base-header-height;
 
   & li {
-    float: left;
+    @include mobile { // mobileだったら、横表示
+      float: left;
+    }
+
     list-style-type: none;
     margin-right: 5px;
     padding-right: 5px;
 
     & a {
-      // color: $_base-navigation-color;
-      font-size: 40px;
+      font-size: $_logo-font-size;
       text-decoration: none;
 
       & :hover { // ネストが深くて警告が出るが、無視

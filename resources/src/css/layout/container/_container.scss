@@ -1,7 +1,7 @@
 .container {
   @include css3(margin-left, $_base-animation-speed, linear);
   background: $_base-background-color;
-  height: 95vh;
+  height: 100vh;
   margin-left: $_base-navigation-width;
   position: relative;
   z-index: 900;

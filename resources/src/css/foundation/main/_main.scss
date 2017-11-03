@@ -1,6 +1,7 @@
 .main-contents {
   @include mobile {
-    width: 100%!important;
+    min-width: auto;
+    width: 100% !important;
   }
   // widthはjsで取得
   background: $_base-background-color;
@@ -8,11 +9,6 @@
   max-width: 1000px;
   min-height: 100%;
   min-width: $_base-main-width;
-
-  @include mobile {
-    min-width: auto;
-
-  }
 
   & p {
     line-height: 1.9;

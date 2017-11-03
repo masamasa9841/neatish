@@ -23,13 +23,8 @@ body {
 
 @media screen and (max-width: 950px) {
   .main-contents {
-    width: 100% !important;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .main-contents {
     min-width: auto;
+    width: 100% !important;
   }
 }
 
@@ -80,7 +75,7 @@ body {
   -o-transition: margin-left 0.25s linear;
   transition: margin-left 0.25s linear;
   background: #fff;
-  height: 95vh;
+  height: 100vh;
   margin-left: 220px;
   position: relative;
   z-index: 900;
@@ -276,18 +271,34 @@ body {
 
 .web-logo-font {
   font-family: sans-serif;
+  margin-left: -41px;
   padding: 0;
+  position: fixed;
+  top: 50px;
+}
+
+@media screen and (max-width: 950px) {
+  .web-logo-font {
+    margin: 0;
+    position: inherit;
+    top: 0;
+  }
 }
 
 .web-logo-font li {
-  float: left;
   list-style-type: none;
   margin-right: 5px;
   padding-right: 5px;
 }
 
+@media screen and (max-width: 950px) {
+  .web-logo-font li {
+    float: left;
+  }
+}
+
 .web-logo-font li a {
-  font-size: 40px;
+  font-size: 32px;
   text-decoration: none;
 }
 
