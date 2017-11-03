@@ -33,6 +33,11 @@ $fa-font-path: '../fonts' !default;
     }
   }
 
+  &-feedly { &::before {
+      content: '\e007';
+    }
+  }
+
   &-pocket { &::before {
       content: '\e008';
     }
