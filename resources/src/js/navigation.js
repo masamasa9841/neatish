@@ -6,12 +6,15 @@
       wheelPropagation: true,
       minScrollbarLength: 20
     });
+
     // humburger button
     $('.nav-toggle').on('click', function () {
       $('body').toggleClass('close');
     });
+
     // Add class
     $('.menu-item-has-children').children("a").addClass('sub-menu-head');
+
     // サイドサブメニューアコーディオン
     $('.sub-menu-head').on('click', function () {
       var $subNav = $(this).next('.sub-menu');
