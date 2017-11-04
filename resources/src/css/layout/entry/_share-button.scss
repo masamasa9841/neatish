@@ -1,4 +1,5 @@
-$_logo-font-size: 32px;
+// シェアボタンのcss
+$_logo-font-size: 28px; // シェアボタンのサイズ
 
 .web-logo-font {
   @include mobile { // mobileだったら、横表示
@@ -19,32 +20,28 @@ $_logo-font-size: 32px;
     list-style-type: none;
     margin-right: 5px;
     padding-right: 5px;
-    position: relative;
+    position: relative; // to social-count
 
     & a {
-      color: #000;
+      color: $_base-submenu-color;
       font-size: $_logo-font-size;
       text-decoration: none;
-
-      & :hover { // ネストが深くて警告が出るが、無視
-        opacity: .6;
-      }
     }
   }
 }
 
-.social-count {
+.social-count { // 数字
   bottom: 0;
-  font-size: 12px;
+  font-size: $_logo-font-size / 2.5;
   position: absolute;
   right: 0;
 }
 
-// fontの色設定
-//ul.web-logo-font a.twitter-btn-icon-link{color:#55ACEE;}
-//ul.web-logo-font a.facebook-btn-icon-link{color:#3C5A99;}
-//ul.web-logo-font a.google-plus-btn-icon-link{color:#DD4B39;}
-//ul.web-logo-font a.hatena-btn-icon-link{color:#3C7DD1;}
-//ul.web-logo-font a.pocket-btn-icon-link{color:#EE4257;}
-//ul.web-logo-font a.line-btn-icon-link{color:#00C300;}
-//ul.web-logo-font a.feedly-btn-icon-link{color:#2BB24C}
+// hoverしたら、色をつける
+.twitter-btn-icon-link     { &:hover { color:#55acee;}}
+.facebook-btn-icon-link    { &:hover { color:#3C5A99;}}
+.google-plus-btn-icon-link { &:hover { color:#DD4B39;}}
+.hatena-btn-icon-link      { &:hover { color:#3C7DD1;}}
+.pocket-btn-icon-link      { &:hover { color:#EE4257;}}
+.line-btn-icon-link        { &:hover { color:#00C300;}}
+.feedly-btn-icon-link      { &:hover { color:#2BB24C;}}

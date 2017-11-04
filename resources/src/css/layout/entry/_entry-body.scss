@@ -6,7 +6,7 @@
     width: 100%;
   }
 
-  & img{
+  & img {
     @include mobile {
       max-width: 100%;
     }

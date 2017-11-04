@@ -1,4 +1,4 @@
-//はてなブックマークではてブ数を取得
+// はてなブックマークではてブ数を取得
 function fetch_hatebu_count(url, selector) {
   jQuery.ajax({
     url:'//b.hatena.ne.jp/entry.count?callback=?',
@@ -15,7 +15,7 @@ function fetch_hatebu_count(url, selector) {
   });
 }
 
-//Push7で購読者数を取得
+// Push7で購読者数を取得
 function fetch_push7_count(app_no, selector) {
   url = 'https://api.push7.jp/api/v1/'+app_no+'/head';
   jQuery.ajax({
@@ -32,7 +32,7 @@ function fetch_push7_count(app_no, selector) {
   });
 }
 
-//count.jsoonからTwitterのツイート数を取得
+// count.jsoonからTwitterのツイート数を取得
 function fetch_twitter_count_from_count_jsoon(url, selector) {
   jQuery.ajax({
     url:'//jsoon.digitiminimi.com/twitter/count.json',
@@ -50,7 +50,7 @@ function fetch_twitter_count_from_count_jsoon(url, selector) {
   });
 }
 
-//Facebookのシェア数を取得
+// Facebookのシェア数を取得
 function fetch_facebook_count(url, selector) {
   jQuery.ajax({
     url:'https://graph.facebook.com/',
@@ -68,3 +68,8 @@ function fetch_facebook_count(url, selector) {
     jQuery( selector ).html('<span class="fa fa-exclamation"></span>');
   });
 }
+
+jQuery(function(){
+  fetch_hatebu_count('<?php the_permalink(); ?>', '.hatebu-count');
+  fetch_facebook_count('<?php the_permalink(); ?>', '.facebook-count');
+});

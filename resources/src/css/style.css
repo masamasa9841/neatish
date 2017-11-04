@@ -271,7 +271,7 @@ body {
 
 .web-logo-font {
   font-family: sans-serif;
-  margin-left: -41px;
+  margin-left: -39px;
   padding: 0;
   position: fixed;
   top: 50px;
@@ -299,20 +299,44 @@ body {
 }
 
 .web-logo-font li a {
-  color: #000;
-  font-size: 32px;
+  color: #350031;
+  font-size: 28px;
   text-decoration: none;
-}
-
-.web-logo-font li a :hover {
-  opacity: .6;
 }
 
 .social-count {
   bottom: 0;
-  font-size: 12px;
+  font-size: 11.2px;
   position: absolute;
   right: 0;
+}
+
+.twitter-btn-icon-link:hover {
+  color: #55acee;
+}
+
+.facebook-btn-icon-link:hover {
+  color: #3C5A99;
+}
+
+.google-plus-btn-icon-link:hover {
+  color: #DD4B39;
+}
+
+.hatena-btn-icon-link:hover {
+  color: #3C7DD1;
+}
+
+.pocket-btn-icon-link:hover {
+  color: #EE4257;
+}
+
+.line-btn-icon-link:hover {
+  color: #00C300;
+}
+
+.feedly-btn-icon-link:hover {
+  color: #2BB24C;
 }
 
 .widget_categories ul {
