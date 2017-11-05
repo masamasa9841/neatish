@@ -13,14 +13,14 @@
 
 	<!-- twitter -->
 	<li class="twitter-btn-icon">
-		<a href="//twitter.com/share" class="twitter-btn-icon-link">
+		<a href="//twitter.com/share?text=<?php echo esc_html( get_the_title() ); ?>&amp;url=<?php echo esc_url( get_the_permalink() ); ?>" class="twitter-btn-icon-link">
 			<span class="icon-twitter"></span>
 		</a>
 	</li>
 
 	<!-- facebook -->
 	<li class="facebook-btn-icon">
-		<a href="//www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?>&amp;t=<?php echo esc_url( get_the_title() );?>"
+		<a href="//www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>&amp;t=<?php echo esc_url( get_the_title() ); ?>"
 		class="facebook-btn-icon-link">
 			<span class="icon-facebook"></span>
 			<span class="social-count facebook-count"></span>
@@ -28,11 +28,11 @@
 	</li>
 
 	<!-- google -->
-	<li class="google-plus-btn-icon">
+	<!-- <li class="google-plus-btn-icon">
 		<a href="#" class="google-plus-btn-icon-link">
 			<span class="icon-googleplus"></span>
 		</a>
-	</li>
+	</li> -->
 
 	<!-- はてぶ -->
 	<li class="hatena-btn">
@@ -48,24 +48,25 @@
 
 	<!-- pecket -->
 	<li class="pocket-btn-icon">
-		<a href="#" class="pocket-btn-icon-link">
+		<a href="//getpocket.com/edit?url=<?php the_permalink(); ?>" class="pocket-btn-icon-link">
 			<span class="icon-pocket">
 		</a>
 	</li>
 
 	<!-- LINE -->
 	<li class="line-btn-icon">
-		<a href="#" class="line-btn-icon-link">
+		<a href="//lineit.line.me/share/ui?url=<?php the_permalink(); ?>" class="line-btn-icon-link">
 			<span class="icon-line">
 		</a>
 	</li>
 
 	<!-- feedly -->
-	<li class="feedly-btn-icon">
-		<a href="#" class="feedly-btn-icon-link">
+	<!-- <li class="feedly-btn-icon">
+		<a href="/feedly.com/index.html#subscription%2Ffeed%2F<?php esc_url( bloginfo( 'rss2_url' ) ); ?>"
+		class="feedly-btn-icon-link">
 			<span class="icon-feedly">
 		</a>
-	</li>
+	</li> -->
 
 </ul>
 <div style="clear:both;"></div> <!-- 回り込みの解除 -->
