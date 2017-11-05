@@ -54,6 +54,12 @@ if ( ! function_exists( 'add_filis' ) ) :
 			get_stylesheet_directory_uri() . '/src/js/navigation.js',
 			array( 'jquery', 'velocity', 'perfect-scrollbar' )
 		);
+
+		// はてブボタンのためのjs.
+		wp_enqueue_script(
+			'hatena',
+			'//b.st-hatena.com/js/bookmark_button.js'
+		);
 	}
 	endif;
 add_action( 'wp_enqueue_scripts', 'add_filis', 1 );
