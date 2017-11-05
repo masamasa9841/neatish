@@ -20,7 +20,7 @@
 				<?php the_content(); ?>
 			</article>
 		<?php endwhile; ?>
-		<?php get_template_part( 'template-parts/share-buttons ' ); // シェアボタンのテンプレート. ?>
+		<?php get_template_part( 'template-parts/share-buttons' ); // シェアボタンのテンプレート. ?>
 		<?php get_template_part( 'template-parts/articleinfo' ); // ArticleInfoのテンプレート. ?>
 		<?php comments_template(); ?>
 	<?php else : ?>

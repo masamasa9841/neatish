@@ -1,3 +1,14 @@
+<?php
+/**
+ * The template Shre-buttons.
+ *
+ * @package neatish
+ * @author Masaya Okawa
+ * @license GPL-2.0+
+ */
+
+?>
+
 <ul class="web-logo-font snsb clearfix snsbs">
 
 	<!-- twitter -->
@@ -8,8 +19,8 @@
 	</li>
 
 	<!-- facebook -->
-  <li class="facebook-btn-icon">
-    <a href="#" class="facebook-btn-icon-link">
+	<li class="facebook-btn-icon">
+		<a href="#" class="facebook-btn-icon-link">
 			<span class="icon-facebook"></span>
 			<span class="social-count facebook-count"></span>
 		</a>
@@ -24,7 +35,7 @@
 
 	<!-- はてぶ -->
 	<li class="hatena-btn">
-		<a href="//b.hatena.ne.jp/entry/<?php the_permalink(); ?>" class="hatena-btn-icon-link" data-hatena-bookmark-title="<?php the_title(); ?>｜<?php bloginfo('name'); ?>">
+		<a href="//b.hatena.ne.jp/entry/<?php the_permalink(); ?>" class="hatena-btn-icon-link" data-hatena-bookmark-title="<?php the_title(); ?>｜<?php bloginfo( 'name' ); ?>">
 			<span class="icon-hatena"></span>
 			<span class="social-count hatebu-count"></span>
 		</a>
