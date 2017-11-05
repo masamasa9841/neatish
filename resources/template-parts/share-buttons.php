@@ -20,7 +20,8 @@
 
 	<!-- facebook -->
 	<li class="facebook-btn-icon">
-		<a href="#" class="facebook-btn-icon-link">
+		<a href="//www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?>&amp;t=<?php echo esc_url( get_the_title() );?>"
+		class="facebook-btn-icon-link">
 			<span class="icon-facebook"></span>
 			<span class="social-count facebook-count"></span>
 		</a>
