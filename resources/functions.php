@@ -7,26 +7,18 @@
  * @license GPL-2.0+
  */
 
-/**
- * Script集
- */
+// script集.
 require get_template_directory() . '/lib/scripts.php';
 
-/**
- * Widetエリアのカテゴリ
- */
+// widetエリアのカスタマイズ.
 require get_template_directory() . '/template-parts/widet-categorize.php';
 
-/**
- * サムネイルのサイズ
- */
+// サムネイルのサイズ.
 add_image_size( 'thumb320', 320, 180, true );
 add_image_size( 'thumb150', 150, 150, true );
 add_image_size( 'thumbnail_200_140', 200, 140, true );
 
-/**
- * アイキャッチの有効
- */
+// アイキャッチの有効.
 add_theme_support( 'post-thumbnails' );
 
 register_sidebar(array(
