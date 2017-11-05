@@ -35,7 +35,7 @@
 
 	<!-- はてぶ -->
 	<li class="hatena-btn">
-		<a href="//b.hatena.ne.jp/entry/<?php the_permalink(); ?>" class="hatena-btn-icon-link" data-hatena-bookmark-title="<?php the_title(); ?>｜<?php bloginfo( 'name' ); ?>">
+		<a href=<?php echo esc_url( get_hatebu_url( get_permalink() ) ); ?> class="hatena-btn-icon-link" data-hatena-bookmark-title="<?php the_title(); ?>｜<?php bloginfo( 'name' ); ?>">
 			<span class="icon-hatena"></span>
 			<span class="social-count hatebu-count"></span>
 		</a>

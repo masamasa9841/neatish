@@ -10,8 +10,12 @@
 // script集.
 require get_template_directory() . '/lib/scripts.php';
 
+// snsのscript.
+require get_template_directory() . '/lib/sns.php';
+
 // widetエリアのカスタマイズ.
 require get_template_directory() . '/template-parts/widet-categorize.php';
+
 
 // サムネイルのサイズ.
 add_image_size( 'thumb320', 320, 180, true );
