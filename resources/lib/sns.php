@@ -8,7 +8,7 @@
  */
 
 /**
- * はてぶurlを作成する
+ * はてぶurlを作成する.
  *
  * @param string $url url.
  */

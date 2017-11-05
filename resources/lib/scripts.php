@@ -7,9 +7,6 @@
  * @license GPL-2.0+
  */
 
-?>
-
-<?php
 if ( ! function_exists( 'add_filis' ) ) :
 	/**
 	 * ファイルを呼び出す
