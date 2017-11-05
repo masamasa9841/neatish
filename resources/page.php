@@ -8,5 +8,5 @@
  */
 
 	get_template_part( 'templates/layout/header/header' );
-	get_template_part( 'templates/layout/single/single' );
+	get_template_part( 'templates/layout/page/page' );
 	get_template_part( 'templates/layout/footer/footer' );
