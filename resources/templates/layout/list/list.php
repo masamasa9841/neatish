@@ -75,4 +75,14 @@
 	<?php else : // 記事が見つからなかったら. ?>
 		<p>お探しの記事は見つかりませんでした。</p>
 	<?php endif; ?>
+	<div class="pagination-area">
+	<!-- ページ送り -->
+	<?php
+	the_posts_pagination(array(
+		'prev_text' => 'PREV',
+		'next_text' => 'NEXT',
+		'mid_size'  => 2,
+	) );
+	?>
+</div>
 </div><!-- /#main -->

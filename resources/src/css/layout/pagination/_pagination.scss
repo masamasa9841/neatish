@@ -1,0 +1,32 @@
+.pagination {
+  background-color: transparent;
+  clear: both;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  overflow: hidden;
+  text-align: center;
+
+  & a {
+    background-color: $_base-background-color;
+    border: solid 1px $_base-border-color;
+    color: #666;
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 10px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $_base-navigation-color-hover;
+    }
+  }
+
+  & span {
+    display: inline-block;
+    padding: 5px 10px;
+  }
+
+  & h2.screen-reader-text {
+    display: none;
+  }
+}
+

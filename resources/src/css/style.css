@@ -339,6 +339,27 @@ body {
   color: #2BB24C;
 }
 
+.sidebar {
+  float: left;
+  padding-left: 50px;
+  padding-top: 50px;
+  width: 250px;
+}
+
+@media screen and (max-width: 950px) {
+  .sidebar {
+    padding-top: 0;
+    padding-left: 0;
+    width: 70%;
+    position: relative;
+    left: 15%;
+  }
+}
+
+.sidebar h2 {
+  border-bottom: dashed 3px #000;
+}
+
 .widget_categories ul {
   font-size: 1em;
   list-style: none;
@@ -496,25 +517,36 @@ header h1 {
   }
 }
 
-.sidebar {
-  float: left;
-  padding-left: 50px;
-  padding-top: 50px;
-  width: 250px;
+.pagination {
+  background-color: transparent;
+  clear: both;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  overflow: hidden;
+  text-align: center;
 }
 
-@media screen and (max-width: 950px) {
-  .sidebar {
-    padding-top: 0;
-    padding-left: 0;
-    width: 70%;
-    position: relative;
-    left: 15%;
-  }
+.pagination a {
+  background-color: #fff;
+  border: solid 1px #e9e9e9;
+  color: #666;
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 10px;
+  text-decoration: none;
 }
 
-.sidebar h2 {
-  border-bottom: dashed 3px #000;
+.pagination a:hover {
+  background-color: #888;
+}
+
+.pagination span {
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.pagination h2.screen-reader-text {
+  display: none;
 }
 
 /*
