@@ -2,7 +2,7 @@
 
 # WP プラグイン一覧
 # インストールしたいプラグインをここに記述する
-plugins=("theme-check" "wordpress-popular-posts")
+plugins=("wordpress-popular-posts")
 
 # 一覧にあるプラグインをダウンロード
 for item in "${plugins[@]}"; do
