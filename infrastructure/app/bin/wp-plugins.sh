@@ -2,7 +2,7 @@
 
 # WP プラグイン一覧
 # インストールしたいプラグインをここに記述する
-plugins=("wp-emmet" "wordpress-popular-posts" "jetpack-markdown")
+plugins=("theme-check" "wordpress-popular-posts")
 
 # 一覧にあるプラグインをダウンロード
 for item in "${plugins[@]}"; do
