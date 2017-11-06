@@ -36,7 +36,7 @@
 		<!-- excerpt -->
 		<p>
 			<?php echo esc_html( get_the_custom_excerpt( get_the_content(), 120 ) ); ?>
-			<span class="read-more"><a href="<?php the_permalink(); ?>"> Read More > </a></span>
+			<span class="read-more"><a href="<?php the_permalink(); ?>"><?php esc_html_e( 'Read more', 'neatish' ); ?></a></span>
 		</p>
 	</div> <!-- entry-summary" -->
 
