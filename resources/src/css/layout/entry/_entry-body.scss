@@ -11,6 +11,16 @@
     }
     height: auto;
     max-width: $_base-main-width - $_base-header-height;
+  }
+}
 
+.wp-caption {
+  border: .1em solid $_base-border-color;
+  max-width: 100%;
+  text-align: center;
+
+  &-text {
+    font-size: 80%;
+    margin: 0;
   }
 }
