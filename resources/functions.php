@@ -58,3 +58,10 @@ function get_the_custom_excerpt( $content, $length ) {
 	$content = mb_substr( $content, 0, $length );
 	return $content;
 }
+
+/**
+ * Make theme available for translation
+ *
+ * @return void
+ */
+load_theme_textdomain( 'neatish', get_template_directory() . '/languages' );
