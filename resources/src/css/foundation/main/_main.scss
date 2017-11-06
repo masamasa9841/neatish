@@ -3,11 +3,11 @@
     min-width: auto;
     width: 100% !important;
   }
-  // widthはjsで取得
   background: $_base-background-color;
   float: left;
   max-width: 1000px;
   min-width: $_base-main-width;
+  width: $_base-main-width; // jsで上書きする
 
   & p {
     line-height: 1.9;
