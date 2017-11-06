@@ -1,6 +1,6 @@
 # neatish
 
-![Wordpressテーマ開発中](screenshot.png)
+![Wordpressテーマ開発中](./resources/screenshot.png)
 
 ## License
 
