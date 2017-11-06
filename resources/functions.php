@@ -64,4 +64,7 @@ function get_the_custom_excerpt( $content, $length ) {
  *
  * @return void
  */
-load_theme_textdomain( 'neatish', get_template_directory() . '/languages' );
+function book_stealth_load_textdomain() {
+	load_theme_textdomain( 'neatish', get_template_directory() . '/languages' );
+}
+add_action( 'plugins_loaded', 'book_stealth_load_textdomain' );
