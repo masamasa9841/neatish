@@ -34,7 +34,7 @@
 		</a>
 	</li> -->
 
-	<!-- はてぶ -->
+	<!-- Hatena -->
 	<li class="hatena-btn">
 		<a href=<?php echo esc_url( get_hatebu_url( get_permalink() ) ); ?>
 		target="blank"
@@ -69,4 +69,4 @@
 	</li> -->
 
 </ul>
-<div style="clear:both;"></div> <!-- 回り込みの解除 -->
+<div style="clear:both;"></div>

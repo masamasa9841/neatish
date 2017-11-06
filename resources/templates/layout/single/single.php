@@ -11,7 +11,7 @@
 <div class="entry-body" role="main">
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'template-parts/breadcrumbs' ); // パンくずリスト. ?>
+			<?php get_template_part( 'template-parts/breadcrumbs' ); ?>
 			<article class="article">
 				<header>
 					<h1><?php the_title_attribute(); ?></h1>
@@ -20,10 +20,10 @@
 				<?php the_content(); ?>
 			</article>
 		<?php endwhile; ?>
-		<?php get_template_part( 'template-parts/share-buttons' ); // シェアボタンのテンプレート. ?>
-		<?php get_template_part( 'template-parts/articleinfo' ); // ArticleInfoのテンプレート. ?>
+		<?php get_template_part( 'template-parts/share-buttons' ); ?>
+		<?php get_template_part( 'template-parts/articleinfo' ); ?>
 		<?php comments_template(); ?>
 	<?php else : ?>
-		<p>お探しの記事は見つかりませんでした。</p>
+		<p>The article you were looking for could not be found.</p>
 	<?php endif; ?>
 </div><!-- /#main -->

@@ -8,7 +8,7 @@
  */
 
 /**
- * カテゴリのアーカイブ数にclassを追加する関数
+ * Add class for Archives of Archives.
  *
  * @param string $output Content.
  */

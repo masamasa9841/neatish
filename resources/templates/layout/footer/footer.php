@@ -13,7 +13,7 @@
 				</body>
 			</section>
 		</main>
-		<?php get_sidebar(); // サイドバーの呼び出し. ?>
+		<?php get_sidebar(); ?>
 		<footer class="global-footer">
 			&copy; <?php bloginfo( 'name' ); ?> All Rights Reserved.
 		</footer>

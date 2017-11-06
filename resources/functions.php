@@ -13,7 +13,7 @@ require get_template_directory() . '/lib/scripts.php';
 // SNS Script.
 require get_template_directory() . '/lib/sns.php';
 
-// widetエリアのカスタマイズ.
+// Widet Script.
 require get_template_directory() . '/template-parts/widet-categorize.php';
 
 
@@ -31,7 +31,7 @@ add_theme_support( 'post-thumbnails' );
  */
 function neatish_widgets_init() {
 	register_sidebar(array(
-		'name'          => 'サイドバーウェジェット',
+		'name'          => 'Sidebar_widet',
 		'id'            => 'sidebar',
 		'description'   => '',
 		'before_widget' => '<section id="widget" class="%2$s">',

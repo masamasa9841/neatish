@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 
-<?php get_template_part( 'templates/layout/navigation/navigation' ); // ナヴィゲーションの設定テンプレート. ?>
+<?php get_template_part( 'templates/layout/navigation/navigation' ); ?>
 
 <!-- header -->
 <div class="container">

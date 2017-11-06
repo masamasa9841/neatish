@@ -23,6 +23,6 @@
 		<?php get_template_part( 'template-parts/share-buttons' ); // シェアボタンのテンプレート. ?>
 		<?php comments_template(); ?>
 	<?php else : ?>
-		<p>お探しの記事は見つかりませんでした。</p>
+		<p>The article you were looking for could not be found.</p>
 	<?php endif; ?>
 </div><!-- /#main -->

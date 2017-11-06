@@ -21,7 +21,7 @@
 		<div>
 			<?php if ( get_previous_post() ) : ?>
 				<span class="prev">Prev: <?php previous_post_link( '%link', '%title' ); ?></span>
-			<?php endif; if ( get_next_post() ) : // 次の記事があったら. ?>
+			<?php endif; if ( get_next_post() ) : ?>
 				<sapn class="next">Next: <?php next_post_link( '%link', '%title' ); ?></span>
 			<?php endif; ?>
 		</div>

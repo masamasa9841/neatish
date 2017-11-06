@@ -17,7 +17,6 @@
 		<span></span>
 	</div>
 </div>
-<!-- hamburger button -->
 
 <!-- Navigation -->
 <aside class="scroll">
@@ -25,4 +24,3 @@
 		<?php wp_nav_menu(); ?>
 	</nav> <!-- #global-nav -->
 </aside> <!-- #sidebar -->
-<!-- Navigation -->

@@ -12,13 +12,13 @@
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article class="entry-article">
-				<!-- ブログタイトル -->
+				<!-- Blog title -->
 				<header class="entry-header">
 					<h2 class="entry-title"><a href="<?php the_permalink(); ?>"title="<?php the_title_attribute(); ?>"> <?php the_title_attribute(); ?></a></h2>
 				</header>
 
 				<div class="entry-summary">
-					<!-- サムネイル -->
+					<!-- Thumbnail -->
 					<div class="excerpt-thumb">
 						<?php if ( has_post_thumbnail() ) : ?>
 							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
@@ -36,26 +36,26 @@
 							</a>
 						<?php endif; ?>
 					</div> <!-- excerpt-thumb	 -->
-					<!-- 抜粋 -->
+					<!-- excerpt -->
 					<p>
 						<?php echo esc_html( get_the_custom_excerpt( get_the_content(), 120 ) ); ?>
-						<span class="read-more"><a href="<?php the_permalink(); ?>"> Read More » </a></span>
+						<span class="read-more"><a href="<?php the_permalink(); ?>"> Read More > </a></span>
 					</p>
 				</div> <!-- entry-summary" -->
 
 				<footer>
 					<div class="entry-meta">
 						<span>
-							<!-- カテゴリ -->
+							<!-- Category -->
 							Category: <?php the_category( ', ' ); ?>
-							<!-- タグ -->
+							<!-- tag -->
 							tags: <?php the_tags( '', ', ' ); ?>
 						</span>
 					</div>
 
 					<div class="entry-meta">
 						<span>
-							<!-- 日付 -->
+							<!-- date -->
 							Date: <?php the_time( 'Y/n/j' ); ?>
 							<!-- view -->
 							<?php
@@ -63,7 +63,7 @@
 								echo 'views: ' . esc_html( wpp_get_views( get_the_ID() ) );
 							}
 							?>
-							<!-- 投稿者 -->
+							<!-- Author -->
 							Author: <a href="<?php echo esc_html( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">
 							<?php the_author(); ?></a>
 						</span>
@@ -72,11 +72,11 @@
 
 			</article>
 		<?php endwhile; ?>
-	<?php else : // 記事が見つからなかったら. ?>
-		<p>お探しの記事は見つかりませんでした。</p>
+	<?php else : ?>
+		<p>The article you were looking for could not be found.</p>
 	<?php endif; ?>
 	<div class="pagination-area">
-	<!-- ページ送り -->
+	<!-- pagi nation -->
 	<?php
 	the_posts_pagination(array(
 		'prev_text' => 'PREV',
@@ -84,5 +84,4 @@
 		'mid_size'  => 2,
 	) );
 	?>
-</div>
 </div><!-- /#main -->
