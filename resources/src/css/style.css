@@ -14,7 +14,6 @@ body {
 }
 
 .main-contents {
-  background: #fff;
   float: left;
   max-width: 1000px;
   min-width: 700px;
@@ -51,30 +50,12 @@ body {
   margin-top: 30px;
 }
 
-.article-info {
-  border: 0.3em solid #e9e9e9;
-  margin-bottom: 20px;
-}
-
-.article-info h4 {
-  background: #e9e9e9;
-  font-size: 1.4em;
-  margin: 0;
-  padding: .6em;
-}
-
-.article-info p, .article-info span {
-  line-height: .6em;
-  padding-left: .6em;
-}
-
 .container {
   -webkit-transition: margin-left 0.25s linear;
   -moz-transition: margin-left 0.25s linear;
   -ms-transition: margin-left 0.25s linear;
   -o-transition: margin-left 0.25s linear;
   transition: margin-left 0.25s linear;
-  background: #fff;
   height: 100vh;
   margin-left: 220px;
   position: relative;
@@ -247,6 +228,10 @@ body {
   text-decoration: none;
 }
 
+.sticky {
+  background-color: #e9e9e9;
+}
+
 .entry-body {
   padding-top: 25px;
   width: 650px;
@@ -267,6 +252,30 @@ body {
   .entry-body img {
     max-width: 100%;
   }
+}
+
+.wp-caption-text, .gallery-caption {
+  font-size: 80%;
+  margin: 0;
+}
+
+.wp-caption {
+  border: 0.1em solid #e9e9e9;
+  max-width: 100%;
+  text-align: center;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+.alignright {
+  float: right;
+}
+
+.alignleft {
+  float: left;
 }
 
 .web-logo-font {
@@ -337,6 +346,24 @@ body {
 
 .feedly-btn-icon-link:hover {
   color: #2BB24C;
+}
+
+.article-info {
+  border: 0.3em solid #e9e9e9;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.article-info h4 {
+  background: #e9e9e9;
+  font-size: 1.4em;
+  margin: 0;
+  padding: .6em;
+}
+
+.article-info p, .article-info span {
+  line-height: .6em;
+  padding-left: .6em;
 }
 
 .sidebar {
