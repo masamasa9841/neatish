@@ -68,3 +68,13 @@ function book_stealth_load_textdomain() {
 	load_theme_textdomain( 'neatish', get_template_directory() . '/languages' );
 }
 add_action( 'plugins_loaded', 'book_stealth_load_textdomain' );
+
+/**
+ * Let WordPress manage the document title.
+ *
+ * @return void
+ */
+function setup_theme() {
+	add_theme_support( 'title-tag' );
+}
+add_action( 'after_setup_theme', 'setup_theme' );
