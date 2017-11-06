@@ -7,20 +7,3 @@
     margin-top: 30px;
   }
 }
-
-.article-info {
-  border: .3em solid $_base-border-color;
-  margin-bottom: 20px;
-
-  & h4 {
-    background: $_base-border-color;
-    font-size: 1.4em;
-    margin: 0;
-    padding: .6em;
-  }
-
-  & p, span {
-    line-height: .6em;
-    padding-left: .6em;
-  }
-}
