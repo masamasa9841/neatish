@@ -14,6 +14,7 @@ body {
 }
 
 .main-contents {
+  background-color: #fff;
   float: left;
   max-width: 1000px;
   min-width: 700px;
@@ -56,6 +57,7 @@ body {
   -ms-transition: margin-left 0.25s linear;
   -o-transition: margin-left 0.25s linear;
   transition: margin-left 0.25s linear;
+  background-color: #fff;
   height: 100vh;
   margin-left: 220px;
   position: relative;
