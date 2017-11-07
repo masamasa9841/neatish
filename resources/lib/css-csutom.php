@@ -7,11 +7,13 @@
  * @license GPL-2.0+
  */
 
-$link_color = get_theme_mod( 'link_color', '-webkit-link' );
+$link_color = get_theme_mod( 'link_color', LINK_COLOR );
 ?>
 
-<style type='text/css'>
+<?php echo "<style type='text/css'>"; ?>
+
 	a {
-		color:<?php echo $link_color; ?>;
+		color: <?php echo esc_html( $link_color ); ?>
 	}
-</style>
+
+<?php echo '</style>'; ?>
