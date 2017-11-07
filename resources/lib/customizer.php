@@ -8,6 +8,8 @@
  */
 
 define( 'LINK_COLOR', '' );
+define( 'THEME_COLOR', '' );
+define( 'THEME_SUB_COLOR', '' );
 
 /**
  * Script to get a snippet excerpt.
@@ -22,6 +24,7 @@ function theme_customize_register( $wp_customize ) {
 		'priority'    => 1,
 	) );
 
+	// link color.
 	$wp_customize->add_setting( 'link_color', array(
 		'default' => LINK_COLOR,
 	) );
