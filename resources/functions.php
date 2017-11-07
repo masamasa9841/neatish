@@ -94,3 +94,10 @@ function custom_theme_setup() {
 	add_theme_support( 'automatic-feed-links' );
 }
 add_action( 'after_setup_theme', 'custom_theme_setup' );
+
+/**
+ * Sets the content width in pixels, based on the theme's design and stylesheet.
+ */
+if ( ! isset( $content_width ) ) {
+	$content_width = apply_filters( 'neatish_content_width', 700 );
+}
