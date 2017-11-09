@@ -58,6 +58,9 @@ if ( ! function_exists( 'add_filis' ) ) :
 			'//b.st-hatena.com/js/bookmark_button.js'
 		);
 
+		// コメント返信(theme check).
+		wp_enqueue_script( 'comment-reply' );
+
 	}
 	endif;
 add_action( 'wp_enqueue_scripts', 'add_filis', 1 );
