@@ -27,5 +27,5 @@
 	<?php else : ?>
 		<p>The article you were looking for could not be found.</p>
 	<?php endif; ?>
+	<?php get_template_part( 'template-parts/comments' ); ?>
 </div><!-- /#main -->
-<?php get_template_part( 'template-parts/comments' ); ?>

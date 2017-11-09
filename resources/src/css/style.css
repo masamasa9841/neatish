@@ -1,10 +1,4 @@
 @charset "UTF-8";
-@media screen and (max-width: 600px) {
-  #wpadminbar {
-    position: fixed;
-  }
-}
-
 body {
   background: #fff;
   font-family: 'Lato', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
@@ -577,6 +571,12 @@ header h1 {
 
 .pagination h2.screen-reader-text {
   display: none;
+}
+
+.bypostauthor {
+  background: #600358;
+  border: 1px solid;
+  margin-bottom: 10px;
 }
 
 /*
