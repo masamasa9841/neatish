@@ -29,4 +29,4 @@
 	</header>
 	<main class="main-contents">
 		<section class="inner">
-			<body>
+			<body <?php body_class(); ?>>
