@@ -8,7 +8,7 @@
  */
 
 ?>
-<article class="entry-article">
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'entry-article' ); ?>>
 	<!-- Blog title -->
 	<header class="entry-header">
 		<h2 class="entry-title"><a href="<?php the_permalink(); ?>"title="<?php the_title_attribute(); ?>"> <?php the_title_attribute(); ?></a></h2>
