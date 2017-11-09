@@ -28,4 +28,4 @@
 		<p>The article you were looking for could not be found.</p>
 	<?php endif; ?>
 </div><!-- /#main -->
-<?php comment_form(); ?>
+<?php get_template_part( 'template-parts/comments' ); ?>
