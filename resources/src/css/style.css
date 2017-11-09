@@ -298,8 +298,9 @@ body {
 
 .web-logo-font li {
   list-style-type: none;
-  margin-right: 5px;
-  padding-right: 5px;
+  margin-bottom: 2em;
+  margin-right: .5em;
+  padding-right: .5em;
   position: relative;
 }
 
