@@ -441,6 +441,7 @@ blockquote cite {
     box-sizing: border-box;
     padding: 0 10px;
     position: relative;
+    width: 100%;
   }
 }
 
