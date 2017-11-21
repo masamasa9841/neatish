@@ -1,12 +1,13 @@
 .sidebar {
   @include mobile {
-    padding-top: 0;
-    padding-left: 0;
-    width: 70%;
-    position: relative;
     left: 15%;
+    padding-left: 0;
+    padding-top: 0;
+    position: relative;
+    width: 100%;
   }
   float: left;
+  font-size: $_base-font-size-px - 2;
   padding-left: $_base-header-height;
   padding-top: $_base-header-height;
   width: $_base-sidebar-width;
