@@ -438,10 +438,8 @@ blockquote cite {
 
 @media screen and (max-width: 950px) {
   .sidebar {
-    padding-left: 0;
-    padding-top: 0;
+    padding: 0 10px;
     position: relative;
-    width: 100%;
   }
 }
 

@@ -1,9 +1,7 @@
 .sidebar {
   @include mobile {
-    padding-left: 0;
-    padding-top: 0;
+    padding: 0 10px;
     position: relative;
-    width: 100%;
   }
   float: left;
   font-size: $_base-font-size-px - 2;
