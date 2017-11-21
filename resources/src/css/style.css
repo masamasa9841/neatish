@@ -93,7 +93,7 @@ blockquote cite {
 
 .main-contents .inner {
   margin-bottom: 2em;
-  padding-left: 100px;
+  padding-left: 75px;
   padding-top: 50px;
 }
 
@@ -341,7 +341,7 @@ blockquote cite {
 
 .web-logo-font {
   font-family: sans-serif;
-  margin-left: -89px;
+  margin-left: -64px;
   padding: 0;
   position: fixed;
   top: 50px;
