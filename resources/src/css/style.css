@@ -429,6 +429,7 @@ blockquote cite {
 }
 
 .sidebar {
+  box-sizing: border-box;
   float: left;
   font-size: 14px;
   padding-left: 50px;
