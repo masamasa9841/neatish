@@ -11,7 +11,7 @@
   padding-top: $_base-header-height;
   width: $_base-sidebar-width;
 
-  & h2{
-    border-bottom: dashed 3px #000;
+  & h2 {
+    border-bottom: dashed 3px $_base-border-color;
   }
 }

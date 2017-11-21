@@ -7,3 +7,71 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.article {
+  h2 {
+    background-color: $_base-border-color;
+    padding: $_base-article-padding;
+  }
+
+  h3 {
+    border-bottom: solid 3px $_base-border-color;
+    padding: $_base-article-padding;
+    position: relative;
+
+    &::after {
+      border-bottom: solid 3px #333333;
+      bottom: -3px;
+      content: ' ';
+      display: block;
+      position: absolute;
+      width: 20%;
+    }
+  }
+
+  h4 {
+    border-bottom: dashed 3px $_base-border-color;
+    padding: $_base-article-padding;
+  }
+}
+
+.main-contents {
+  & p {
+    padding: 0 0 0 1em;
+  }
+}
+
+blockquote {
+  border: solid 2px $_base-border-color;
+  box-sizing: border-box;
+  font-style: italic;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px 15px 10px 50px;
+  position: relative;
+
+  &::before {
+    color: $_base-navigation-color;
+    content: '\f10d';
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 25px;
+    left: 15px;
+    line-height: 1;
+    position: absolute;
+    top: 20px;
+    vertical-align: middle;
+  }
+
+  & p {
+    line-height: 1.7;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  & cite {
+    display: block;
+    font-size: .9em;
+    text-align: right;
+  }
+}

@@ -2,9 +2,73 @@
 body {
   background: #fff;
   font-family: 'Lato', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
+}
+
+.article h2 {
+  background-color: #e9e9e9;
+  padding: 0.5em 0.5em;
+}
+
+.article h3 {
+  border-bottom: solid 3px #e9e9e9;
+  padding: 0.5em 0.5em;
+  position: relative;
+}
+
+.article h3::after {
+  border-bottom: solid 3px #333333;
+  bottom: -3px;
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 20%;
+}
+
+.article h4 {
+  border-bottom: dashed 3px #e9e9e9;
+  padding: 0.5em 0.5em;
+}
+
+.main-contents p {
+  padding: 0 0 0 1em;
+}
+
+blockquote {
+  border: solid 2px #e9e9e9;
+  box-sizing: border-box;
+  font-style: italic;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px 15px 10px 50px;
+  position: relative;
+}
+
+blockquote::before {
+  color: #600358;
+  content: '\f10d';
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 25px;
+  left: 15px;
+  line-height: 1;
+  position: absolute;
+  top: 20px;
+  vertical-align: middle;
+}
+
+blockquote p {
+  line-height: 1.7;
+  margin: 10px 0;
+  padding: 0;
+}
+
+blockquote cite {
+  display: block;
+  font-size: .9em;
+  text-align: right;
 }
 
 .main-contents {
@@ -381,7 +445,7 @@ body {
 }
 
 .sidebar h2 {
-  border-bottom: dashed 3px #000;
+  border-bottom: dashed 3px #e9e9e9;
 }
 
 .widget_categories ul {

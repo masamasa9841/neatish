@@ -1,4 +1,4 @@
-$_base-font-size-px: 13px !default;
+$_base-font-size-px: 16px !default;
 $_base-background-color: #fff;
 
 $_base-navigation-color: #600358;
@@ -12,6 +12,9 @@ $_base-sidebar-width: 250px;
 $_base-main-width: 700px;
 $_base-header-height: 50px;
 $_base-animation-speed: .25s;
+
+$_base-article-padding: .5em .5em;
+
 @mixin mini-display {
   @media screen and (max-width: 1200px) {
     @content;
