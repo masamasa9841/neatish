@@ -16,6 +16,9 @@ require get_template_directory() . '/lib/sns.php';
 // Customizer Script.
 require get_template_directory() . '/lib/customizer.php';
 
+// Blog card script.
+require get_template_directory() . '/lib/brog-card.php';
+
 // Widet Script.
 require get_template_directory() . '/template-parts/widet-categorize.php';
 

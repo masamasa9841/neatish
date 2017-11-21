@@ -9,7 +9,7 @@
  */
 
 /**
- * Unko.
+ * Enable blog card.
  *
  * @param string $the_content Content.
  */
@@ -24,9 +24,9 @@ function url_to_hatena_blog_card( $the_content ) {
 	}
 	return $the_content;
 }
-add_filter( 'the_content', 'url_to_hatena_blog_card' );
+// add_filter( 'the_content', 'url_to_hatena_blog_card' );
 
-wp_oembed_add_provider( 'https://*', 'https://hatenablog.com/oembed' );
+// wp_oembed_add_provider( 'https://*', 'https://hatenablog.com/oembed' );
 add_filter( 'embed_oembed_discover', '__return_false' );
 remove_action( 'parse_query', 'wp_oembed_parse_query' );
 remove_action( 'wp_head', 'wp_oembed_remove_discovery_links' );
