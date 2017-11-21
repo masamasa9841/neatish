@@ -1,10 +1,12 @@
 // はてなブックマークではてブ数を取得
 function fetch_hatebu_count(url, selector) {
-  const endpoint = "https://b.hatena.ne.jp/entry.count?url=" + encodeURIComponent(url);
   jQuery.ajax({
-    url: endpoint,
+    url:'//b.hatena.ne.jp/entry.count?callback=?',
     dataType:'jsonp',
     timeout: 10000, //10sec
+    data:{
+      url:url
+    }
   }).done(function(res){
     jQuery( selector ).text( res || 0 );
   }).fail(function(){
@@ -55,7 +57,6 @@ function fetch_facebook_count(url, selector) {
     timeout: 10000, //10sec
     data:{ id:url }
   }).done(function(res){
-    //console.log(res);
     if ( res.share && res.share.share_count ) {
       jQuery( selector ).text( res.share.share_count );
     } else {
@@ -65,8 +66,3 @@ function fetch_facebook_count(url, selector) {
     jQuery( selector ).html('<span class="fa fa-exclamation"></span>');
   });
 }
-
-jQuery(function(){
-  fetch_hatebu_count('<?php the_permalink(); ?>', '.hatebu-count');
-  fetch_facebook_count('<?php the_permalink(); ?>', '.facebook-count');
-});
