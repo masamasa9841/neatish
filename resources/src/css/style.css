@@ -350,8 +350,14 @@ blockquote cite {
 @media screen and (max-width: 950px) {
   .web-logo-font {
     margin: 0;
-    position: inherit;
-    top: 0;
+    margin-top: 5em;
+    position: relative;
+    top: 0 !important;
+  }
+  .web-logo-font::before {
+    content: 'シェア';
+    position: absolute;
+    top: -2em;
   }
 }
 
