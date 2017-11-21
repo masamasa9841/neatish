@@ -92,6 +92,7 @@ blockquote cite {
 }
 
 .main-contents .inner {
+  margin-bottom: 2em;
   padding-left: 50px;
   padding-top: 50px;
 }
