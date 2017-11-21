@@ -8,7 +8,7 @@ $_logo-font-size: 28px; // シェアボタンのサイズ
     top: 0;
   }
   font-family: sans-serif;
-  margin-left: -$_base-header-height + ($_base-header-height - $_logo-font-size) / 2;
+  margin-left: -$_base-header-height * 2 + ($_base-header-height - $_logo-font-size) / 2;
   padding: 0;
   position: fixed;
   top: $_base-header-height; // jsで上書きする
