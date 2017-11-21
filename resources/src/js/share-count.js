@@ -1,13 +1,10 @@
 // はてなブックマークではてブ数を取得
 function fetch_hatebu_count(url, selector) {
+  const endpoint = "https://b.hatena.ne.jp/entry.count?url=" + encodeURIComponent(url);
   jQuery.ajax({
-    url:'//b.hatena.ne.jp/entry.count?callback=?',
-    //url:'//api.b.st-hatena.com/entry.count?callback=?',
+    url: endpoint,
     dataType:'jsonp',
     timeout: 10000, //10sec
-    data:{
-      url:url
-    }
   }).done(function(res){
     jQuery( selector ).text( res || 0 );
   }).fail(function(){
