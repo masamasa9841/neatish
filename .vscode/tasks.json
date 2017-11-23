@@ -1,13 +1,20 @@
 {
-    "version": "0.1.0",
-    "command": "npm",
-    "isShellCommand": true,
-    "args": [
-        "run"
-    ],
-    "tasks": [{
-        "taskName": "build-sass",
-        "isBuildCommand": true,
-        "showOutput": "always"
-    }]
+  "version": "0.1.0",
+  "command": "npm",
+  "isShellCommand": true,
+  "args": [
+      "run"
+  ],
+  "tasks": [
+    {
+      "taskName": "build-sass",
+      "isBuildCommand": true,
+      "showOutput": "always"
+    },
+    {
+      "taskName": "build-sass2",
+      "isBuildCommand": true,
+      "showOutput": "always"
+    }
+  ]
 }
