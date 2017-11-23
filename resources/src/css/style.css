@@ -121,6 +121,7 @@ blockquote cite {
   margin-left: 220px;
   position: relative;
   z-index: 900;
+  overflow: auto;
 }
 
 .close .container {

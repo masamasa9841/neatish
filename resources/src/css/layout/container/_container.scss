@@ -5,6 +5,7 @@
   margin-left: $_base-navigation-width;
   position: relative;
   z-index: 900;
+  overflow: auto;
 
   .close & {
     margin-left: 0;
