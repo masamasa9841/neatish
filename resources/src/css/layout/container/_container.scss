@@ -14,6 +14,6 @@
     margin-left: 0;
   }
   @include mobile {
-    overflow: hidden;
+    overflow: unset;
   }
 }
