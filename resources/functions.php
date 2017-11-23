@@ -103,3 +103,12 @@ add_action( 'after_setup_theme', 'custom_theme_setup' );
 if ( ! isset( $content_width ) ) {
 	$content_width = apply_filters( 'neatish_content_width', 700 );
 }
+
+/**
+ * Registers an editor stylesheet for the theme.
+ */
+function wpdocs_theme_add_editor_styles() {
+	add_editor_style( '/src/css/editor-style.css' );
+}
+add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
+
