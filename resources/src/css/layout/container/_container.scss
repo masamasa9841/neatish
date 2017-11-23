@@ -5,12 +5,15 @@
   margin-left: $_base-navigation-width;
   position: relative;
   z-index: 900;
-  overflow: scroll;
+  overflow: auto;
 
   .close & {
     margin-left: 0;
   }
   @include mini-display {
     margin-left: 0;
+  }
+  @include mobile {
+    overflow: hidden;
   }
 }

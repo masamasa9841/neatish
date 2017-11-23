@@ -128,7 +128,7 @@ blockquote cite {
   margin-left: 220px;
   position: relative;
   z-index: 900;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .close .container {
@@ -138,6 +138,12 @@ blockquote cite {
 @media screen and (max-width: 1200px) {
   .container {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    overflow: hidden;
   }
 }
 
