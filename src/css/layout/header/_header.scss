@@ -4,11 +4,15 @@ header h1 {
   padding: 0;
 }
 
+.brand-logo {
+  font-size: $_base-font-size * 2;
+  line-height: $_base-header-height ;
+}
+
 // サイトロゴ
 .global-head {
   background: $_base-background-color;
   border-bottom: 1px solid $_base-border-color;
-  line-height: $_base-header-height;
   padding-left: $_base-header-height; //サイト名の位置調整
   position: fixed;
   width: 100%; // 画面いっぱい

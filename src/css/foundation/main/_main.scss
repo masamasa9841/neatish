@@ -18,7 +18,8 @@
     @include mobile {
       padding: $_base-header-height 10px 0;
     }
-    padding-left: $_base-header-height;
+    margin-bottom: 2em;
+    padding-left: $_base-header-height * 1.5;
     padding-top: $_base-header-height;
   }
 }

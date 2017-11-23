@@ -25,7 +25,7 @@
 <!-- header -->
 <div class="container">
 	<header class="global-head">
-		<h1 id="brand-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		<h1 class="brand-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 	</header>
 	<main class="main-contents">
 		<section class="inner">

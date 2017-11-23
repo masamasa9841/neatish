@@ -9,6 +9,13 @@
 
 ?>
 
+<script type="text/javascript">
+	jQuery(function(){
+		fetch_hatebu_count('<?php the_permalink(); ?>', '.hatebu-count');
+		fetch_facebook_count('<?php the_permalink(); ?>', '.facebook-count');
+	});
+</script>
+
 <ul class="web-logo-font snsb clearfix snsbs">
 
 	<!-- twitter -->

@@ -16,9 +16,11 @@ require get_template_directory() . '/lib/sns.php';
 // Customizer Script.
 require get_template_directory() . '/lib/customizer.php';
 
+// Blog card script.
+require get_template_directory() . '/lib/brog-card.php';
+
 // Widet Script.
 require get_template_directory() . '/template-parts/widet-categorize.php';
-
 
 
 // Size of Thumbnail.
@@ -101,3 +103,12 @@ add_action( 'after_setup_theme', 'custom_theme_setup' );
 if ( ! isset( $content_width ) ) {
 	$content_width = apply_filters( 'neatish_content_width', 700 );
 }
+
+/**
+ * Registers an editor stylesheet for the theme.
+ */
+function wpdocs_theme_add_editor_styles() {
+	add_editor_style( '/src/css/editor-style.css' );
+}
+add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
+

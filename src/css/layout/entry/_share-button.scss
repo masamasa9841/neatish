@@ -4,11 +4,18 @@ $_logo-font-size: 28px; // シェアボタンのサイズ
 .web-logo-font {
   @include mobile { // mobileだったら、横表示
     margin: 0;
-    position: inherit;
-    top: 0;
+    margin-top: 5em;
+    position: relative;
+    top: 0 !important;
+
+    &::before {
+      content: 'シェア';
+      position: absolute;
+      top: -2em;
+    }
   }
   font-family: sans-serif;
-  margin-left: -$_base-header-height + ($_base-header-height - $_logo-font-size) / 2;
+  margin-left: -$_base-header-height * 1.5 + ($_base-header-height - $_logo-font-size) / 2;
   padding: 0;
   position: fixed;
   top: $_base-header-height; // jsで上書きする

@@ -1,9 +1,93 @@
 body {
   background: $_base-background-color;
   font: {
-    family: 'Lato', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
-    size: $_base-font-size-px;
+    family: -apple-system, BlinkMacSystemFont, Helvetica, Meiryo, MyYuGothicM, YuGothic, "Helvetica Neue", sans-serif;
+    size: $_base-font-size;
   }
   margin: 0;
   padding: 0;
+}
+
+.heading {
+  margin: 0.5em 0 0.5em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: $_base-font-size * 3.157;
+  @extend .heading;
+}
+
+h2 {
+  font-size: $_base-font-size * 2.369;
+  @extend .heading;
+
+  &::first-letter {
+    font-size: $_base-font-size * 1.3;
+    color: $_base-navigation-color;
+  }
+}
+
+h3 {
+  background-color: $_base-border-color;
+  font-size: $_base-font-size * 1.777;
+  @extend .heading;
+}
+
+h4 {
+  border-bottom: solid 3px $_base-border-color;
+  position: relative;
+  font-size: $_base-font-size * 1.333;
+  @extend .heading;
+
+  &::after {
+    border-bottom: solid 3px #333333;
+    bottom: -3px;
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 20%;
+  }
+}
+
+h5 {
+  border-bottom: dashed 3px $_base-border-color;
+  font-size: $_base-font-size;
+  @extend .heading;
+}
+
+
+blockquote {
+  border: solid 2px $_base-border-color;
+  box-sizing: border-box;
+  font-style: italic;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px 15px 10px 50px;
+  position: relative;
+
+  &::before {
+    color: $_base-navigation-color;
+    content: '\f10d';
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 25px;
+    left: 15px;
+    line-height: 1;
+    position: absolute;
+    top: 20px;
+    vertical-align: middle;
+  }
+
+  & p {
+    line-height: 1.7;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  & cite {
+    display: block;
+    font-size: .9em;
+    text-align: right;
+  }
 }

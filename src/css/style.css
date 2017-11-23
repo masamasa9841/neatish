@@ -1,10 +1,88 @@
 @charset "UTF-8";
 body {
   background: #fff;
-  font-family: 'Lato', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Meiryo, MyYuGothicM, YuGothic, "Helvetica Neue", sans-serif;
+  font-size: 1em;
   margin: 0;
   padding: 0;
+}
+
+.heading, h1, h2, h3, h4, h5 {
+  margin: 0.5em 0 0.5em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3.157em;
+}
+
+h2 {
+  font-size: 2.369em;
+}
+
+h2::first-letter {
+  font-size: 1.3em;
+  color: #600358;
+}
+
+h3 {
+  background-color: #e9e9e9;
+  font-size: 1.777em;
+}
+
+h4 {
+  border-bottom: solid 3px #e9e9e9;
+  position: relative;
+  font-size: 1.333em;
+}
+
+h4::after {
+  border-bottom: solid 3px #333333;
+  bottom: -3px;
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 20%;
+}
+
+h5 {
+  border-bottom: dashed 3px #e9e9e9;
+  font-size: 1em;
+}
+
+blockquote {
+  border: solid 2px #e9e9e9;
+  box-sizing: border-box;
+  font-style: italic;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px 15px 10px 50px;
+  position: relative;
+}
+
+blockquote::before {
+  color: #600358;
+  content: '\f10d';
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 25px;
+  left: 15px;
+  line-height: 1;
+  position: absolute;
+  top: 20px;
+  vertical-align: middle;
+}
+
+blockquote p {
+  line-height: 1.7;
+  margin: 10px 0;
+  padding: 0;
+}
+
+blockquote cite {
+  display: block;
+  font-size: .9em;
+  text-align: right;
 }
 
 .main-contents {
@@ -28,7 +106,8 @@ body {
 }
 
 .main-contents .inner {
-  padding-left: 50px;
+  margin-bottom: 2em;
+  padding-left: 75px;
   padding-top: 50px;
 }
 
@@ -36,13 +115,6 @@ body {
   .main-contents .inner {
     padding: 50px 10px 0;
   }
-}
-
-.article h1 {
-  font-size: 30px;
-  line-height: 117%;
-  margin-bottom: 20px;
-  margin-top: 30px;
 }
 
 .container {
@@ -56,6 +128,7 @@ body {
   margin-left: 220px;
   position: relative;
   z-index: 900;
+  overflow: auto;
 }
 
 .close .container {
@@ -276,7 +349,7 @@ body {
 
 .web-logo-font {
   font-family: sans-serif;
-  margin-left: -39px;
+  margin-left: -64px;
   padding: 0;
   position: fixed;
   top: 50px;
@@ -285,8 +358,14 @@ body {
 @media screen and (max-width: 950px) {
   .web-logo-font {
     margin: 0;
-    position: inherit;
-    top: 0;
+    margin-top: 5em;
+    position: relative;
+    top: 0 !important;
+  }
+  .web-logo-font::before {
+    content: 'シェア';
+    position: absolute;
+    top: -2em;
   }
 }
 
@@ -365,6 +444,7 @@ body {
 
 .sidebar {
   float: left;
+  font-size: 0.9em;
   padding-left: 50px;
   padding-top: 50px;
   width: 250px;
@@ -372,16 +452,16 @@ body {
 
 @media screen and (max-width: 950px) {
   .sidebar {
-    padding-top: 0;
-    padding-left: 0;
-    width: 70%;
+    box-sizing: border-box;
+    padding: 0 10px;
     position: relative;
-    left: 15%;
+    width: 100%;
   }
 }
 
 .sidebar h2 {
-  border-bottom: dashed 3px #000;
+  border-bottom: dashed 3px #e9e9e9;
+  font-size: 1.5em;
 }
 
 .widget_categories ul {
@@ -445,10 +525,14 @@ header h1 {
   padding: 0;
 }
 
+.brand-logo {
+  font-size: 2em;
+  line-height: 50px;
+}
+
 .global-head {
   background: #fff;
   border-bottom: 1px solid #e9e9e9;
-  line-height: 50px;
   padding-left: 50px;
   position: fixed;
   width: 100%;
