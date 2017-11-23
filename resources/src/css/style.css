@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   background: #fff;
-  font-family: 'Lato', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Meiryo, MyYuGothicM, YuGothic, "Helvetica Neue", sans-serif;
   font-size: 1em;
   margin: 0;
   padding: 0;
@@ -128,7 +128,6 @@ blockquote cite {
   margin-left: 220px;
   position: relative;
   z-index: 900;
-  overflow: auto;
 }
 
 .close .container {
