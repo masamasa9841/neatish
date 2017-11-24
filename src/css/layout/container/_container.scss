@@ -13,4 +13,7 @@
   @include mini-display {
     margin-left: 0;
   }
+  @include mobile {
+    overflow: unset;
+  }
 }

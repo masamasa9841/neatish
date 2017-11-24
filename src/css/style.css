@@ -141,6 +141,12 @@ blockquote cite {
   }
 }
 
+@media screen and (max-width: 950px) {
+  .container {
+    overflow: unset;
+  }
+}
+
 .scroll {
   background: #600358;
   height: 100%;
