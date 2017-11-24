@@ -1,0 +1,17 @@
+.article-info {
+  border: .3em solid $_base-border-color;
+  margin-bottom: 1em;
+  margin-top: 1em;
+
+  & h4 {
+    background: $_base-border-color;
+    font-size: 1.4em;
+    margin: 0;
+    padding: .6em;
+  }
+
+  & p, span {
+    line-height: .6em;
+    padding-left: .6em;
+  }
+}

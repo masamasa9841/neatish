@@ -1,0 +1,77 @@
+.entry-title {
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 20px;
+
+  & a {
+    color: #444;
+    text-decoration: none;
+  }
+  @include mobile {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+.entry-article {
+  border-bottom: 2px double $_base-border-color;
+  hyphens: auto;
+  margin-bottom: 28px;
+  max-width: $_base-main-width;
+  padding-bottom: 24px;
+  word-wrap: break-word;
+}
+
+.excerpt-thumb {
+  @include mobile {
+    float: none;
+  }
+  float: left; //画像に回りこみ
+  margin: 8px 24px 12px 0;
+}
+
+//サムネイル
+.entry-thumnail {
+  @include mobile {
+    margin: 0 auto;
+  }
+  border: 1px solid $_base-border-color;
+  display: block; //リンクエラー用
+  height: 140px;
+  width: 200px;
+}
+
+.entry-summary {
+  & .read-more {
+    display: inline-block;
+  }
+
+  & p {
+    @include mobile {
+      text-align: left;
+    }
+  }
+}
+
+.read-more a {
+  color: #0B91EA;
+  outline: none;
+  text-decoration: none;
+}
+
+.entry-meta {
+  clear: left; //回り込み解除
+  color: #757575;
+
+  & >span a {
+    color: #333;
+    padding: 2px;
+    text-decoration: none;
+    }
+}
+
+.sticky { // 一番上の固定記事
+  background-color: $_base-border-color;
+}

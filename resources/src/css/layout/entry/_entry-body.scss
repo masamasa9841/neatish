@@ -1,0 +1,48 @@
+.entry-body {
+  @include mobile {
+    width: 100%;
+  }
+  padding-top: $_base-header-height / 2;
+  width: $_base-main-width - $_base-header-height;
+
+  & img {
+    @include mobile {
+      max-width: 100%;
+    }
+    height: auto;
+    max-width: $_base-main-width - $_base-header-height;
+  }
+}
+
+%caption {
+  font-size: 80%;
+  margin: 0;
+}
+
+.wp-caption {
+  border: .1em solid $_base-border-color;
+  max-width: 100%;
+  text-align: center;
+
+  &-text {
+    @extend %caption;
+  }
+}
+
+.gallery-caption {
+  @extend %caption;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+.alignright {
+  float: right;
+}
+
+.alignleft {
+  float: left;
+}
+
