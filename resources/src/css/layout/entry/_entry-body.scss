@@ -3,7 +3,6 @@
     width: 100%;
   }
   padding-top: $_base-header-height / 2;
-  width: $_base-main-width - $_base-header-height;
 
   & img {
     @include mobile {
