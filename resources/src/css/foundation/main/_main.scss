@@ -8,6 +8,7 @@
   max-width: 1000px;
   min-width: $_base-main-width;
   width: $_base-main-width; // jsで上書きする
+  @include css3( '', $_base-animation-speed, linear);
 
   & p {
     line-height: 1.9;
