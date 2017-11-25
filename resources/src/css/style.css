@@ -91,6 +91,11 @@ blockquote cite {
   max-width: 1000px;
   min-width: 700px;
   width: 700px;
+  -webkit-transition:  0.25s linear;
+  -moz-transition:  0.25s linear;
+  -ms-transition:  0.25s linear;
+  -o-transition:  0.25s linear;
+  transition:  0.25s linear;
 }
 
 @media screen and (max-width: 950px) {
