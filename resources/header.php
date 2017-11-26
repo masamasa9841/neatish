@@ -18,7 +18,11 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<?php wp_head(); ?>
 	</head>
-	<body <?php body_class(); ?>>
+	<?php if ( is_home() ) { ?>
+		<body <?php body_class(); ?>>
+	<?php } else { ?>
+		<body <?php body_class( 'close' ); ?>>
+	<?php } ?>
 		<!-- hamburger button -->
 		<div class="nav-menu-head">Menu</div>
 		<div class="nav-toggle">
