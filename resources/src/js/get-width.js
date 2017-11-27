@@ -23,13 +23,13 @@
     var navigation_width = $( '.scroll' ).outerWidth();
     var sidebar_width = $( '.sidebar' ).outerWidth();
     var max_main_width = window_width - navigation_width - sidebar_width - 20;
-    var inner = $( '.inner' ).width();
+    var inner = window_width - navigation_width - sidebar_width - 20 - 75;
     if( $( 'body' ).hasClass( 'close' ) ) {
       $( '.main-contents' ).css( 'width', max_main_width + navigation_width );
-      $( '.entry-body img' ).css( 'max-width', inner + navigation_width );
+      // $( '.entry-body img' ).css( 'max-width', inner + navigation_width );
     } else {
       $( '.main-contents' ).css( 'width', max_main_width );
-      $( '.entry-body img' ).css( 'max-width', inner - navigation_width );
+      // $( '.entry-body img' ).css( 'max-width', inner);
     }
   }
 

@@ -5,11 +5,8 @@
   padding-top: $_base-header-height / 2;
 
   & img {
-    @include mobile {
-      max-width: 100%;
-    }
     height: auto;
-    max-width: $_base-main-width - $_base-header-height;
+    max-width: 100%;
   }
 }
 

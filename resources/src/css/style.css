@@ -322,13 +322,7 @@ blockquote cite {
 
 .entry-body img {
   height: auto;
-  max-width: 650px;
-}
-
-@media screen and (max-width: 950px) {
-  .entry-body img {
-    max-width: 100%;
-  }
+  max-width: 100%;
 }
 
 .wp-caption-text, .gallery-caption {
