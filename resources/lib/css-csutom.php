@@ -7,7 +7,8 @@
  * @license GPL-2.0+
  */
 
-$link_color = get_theme_mod( 'link_color', LINK_COLOR );
+$link_color       = get_theme_mod( 'link_color', LINK_COLOR );
+$background_color = get_theme_mod( 'background_color' );
 ?>
 
 <?php echo "<style type='text/css'>"; ?>
@@ -16,4 +17,8 @@ $link_color = get_theme_mod( 'link_color', LINK_COLOR );
 		color: <?php echo esc_html( $link_color ); ?>
 	}
 
-<?php echo '</style>'; ?>
+	.container {
+		background-color: #<?php echo esc_html( $background_color ); ?>
+	}
+
+<?php echo '</style>'; ?><j:w></j:w>

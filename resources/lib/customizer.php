@@ -24,6 +24,9 @@ function theme_customize_register( $wp_customize ) {
 		'priority'    => 1,
 	) );
 
+	// background_color for reflesh.
+	$wp_customize->add_setting( 'background_color' );
+
 	// link color.
 	$wp_customize->add_setting( 'link_color', array(
 		'default'           => LINK_COLOR,
@@ -37,6 +40,21 @@ function theme_customize_register( $wp_customize ) {
 			'section'     => 'colors',
 			'settings'    => 'link_color',
 			'priority'    => 15,
+		)
+	) );
+	// Theme Color.
+	$wp_customize->add_setting( 'theme_color', array(
+		'default'           => THEME_COLOR,
+		'sanitize_callback' => 'sanitize_hex_color',
+	) );
+	$wp_customize->add_control( new WP_Customize_Color_Control(
+		$wp_customize,
+		'theme_color', array(
+			'label'       => 'theme color',
+			'description' => 'Change theme color',
+			'section'     => 'colors',
+			'settings'    => 'theme_color',
+			'priority'    => 20,
 		)
 	) );
 }
