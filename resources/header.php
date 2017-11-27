@@ -20,7 +20,7 @@
 	</head>
 	<?php if ( is_home() ) { ?>
 		<body <?php body_class(); ?>>
-	<?php } else { ?>
+	<?php } elseif ( ! wp_is_mobile() ) { ?>
 		<body <?php body_class( 'close' ); ?>>
 	<?php } ?>
 		<!-- hamburger button -->
