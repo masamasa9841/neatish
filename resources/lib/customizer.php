@@ -8,6 +8,7 @@
  */
 
 define( 'LINK_COLOR', '' );
+define( 'BACKGROUND_COLOR_NEATISH', 'ffffff' );
 define( 'THEME_COLOR', '' );
 define( 'THEME_SUB_COLOR', '' );
 
@@ -25,7 +26,11 @@ function theme_customize_register( $wp_customize ) {
 	) );
 
 	// background_color for reflesh.
-	$wp_customize->add_setting( 'background_color' );
+	$wp_customize->add_setting( 'background_color', array(
+		'default' => 'ffffff',
+	) );
+	// Remove header color.
+	$wp_customize->remove_control( 'header_textcolor' );
 
 	// link color.
 	$wp_customize->add_setting( 'link_color', array(

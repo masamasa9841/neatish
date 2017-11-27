@@ -7,8 +7,9 @@
  * @license GPL-2.0+
  */
 
-$link_color       = get_theme_mod( 'link_color', LINK_COLOR );
+$link_color       = get_theme_mod( 'link_color' );
 $background_color = get_theme_mod( 'background_color' );
+$theme_color      = get_theme_mod( 'theme_color' );
 ?>
 
 <?php echo "<style type='text/css'>"; ?>
