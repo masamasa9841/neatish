@@ -289,21 +289,9 @@ blockquote cite {
   }
 }
 
-.read-more a {
-  color: #0B91EA;
-  outline: none;
-  text-decoration: none;
-}
-
 .entry-meta {
   clear: left;
   color: #757575;
-}
-
-.entry-meta > span a {
-  color: #333;
-  padding: 2px;
-  text-decoration: none;
 }
 
 .sticky {
