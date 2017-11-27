@@ -6,9 +6,8 @@
   @include css3('', $_base-animation-speed, linear);
   background-color: $_base-background-color;
   float: left;
-  max-width: 1000px;
+  max-width: 1500px;
   min-width: $_base-main-width;
-  width: $_base-main-width; // jsで上書きする
 
   & p {
     line-height: 1.9;
