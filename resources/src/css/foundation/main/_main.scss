@@ -4,7 +4,6 @@
     width: 100% !important;
   }
   @include css3('', $_base-animation-speed, linear);
-  background-color: $_base-background-color;
   float: left;
   max-width: 1500px;
   min-width: $_base-main-width;

@@ -91,7 +91,6 @@ blockquote cite {
   -ms-transition:  0.25s linear;
   -o-transition:  0.25s linear;
   transition:  0.25s linear;
-  background-color: #fff;
   float: left;
   max-width: 1500px;
   min-width: 700px;
@@ -127,12 +126,11 @@ blockquote cite {
   -ms-transition: margin-left 0.25s linear;
   -o-transition: margin-left 0.25s linear;
   transition: margin-left 0.25s linear;
-  background-color: #fff;
   height: 100vh;
   margin-left: 220px;
+  overflow: auto;
   position: relative;
   z-index: 900;
-  overflow: auto;
 }
 
 .close .container {
