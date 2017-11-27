@@ -26,10 +26,10 @@
     var inner = $( '.inner' ).width();
     if( $( 'body' ).hasClass( 'close' ) ) {
       $( '.main-contents' ).css( 'width', max_main_width + navigation_width );
-      // $( '.entry-body img' ).css( 'max-width', inner + navigation_width );
+      $( '.entry-body img' ).css( 'max-width', inner + navigation_width );
     } else {
       $( '.main-contents' ).css( 'width', max_main_width );
-      // $( '.entry-body img' ).css( 'max-width', inner - navigation_width );
+      $( '.entry-body img' ).css( 'max-width', inner - navigation_width );
     }
   }
 
