@@ -60,7 +60,6 @@ $entry_title         = get_theme_mod( 'entry_title' );
 	}
 
 	/* toggle color */
-	.scroll,
 	.nav-toggle span {
 		background: <?php echo esc_html( $toggle ); ?>
 	}
