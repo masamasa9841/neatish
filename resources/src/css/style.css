@@ -26,7 +26,7 @@ h2::first-letter {
 }
 
 h3 {
-  background-color: #e9e9e9;
+  background-color: #600358;
   font-size: 1.777em;
 }
 
@@ -371,7 +371,6 @@ blockquote cite {
 }
 
 .web-logo-font li a {
-  color: #350031;
   font-size: 28px;
   text-decoration: none;
 }
@@ -383,31 +382,31 @@ blockquote cite {
   right: 0;
 }
 
-.twitter-btn-icon-link:hover {
+.twitter-btn-icon-link {
   color: #55acee;
 }
 
-.facebook-btn-icon-link:hover {
+.facebook-btn-icon-link {
   color: #3C5A99;
 }
 
-.google-plus-btn-icon-link:hover {
+.google-plus-btn-icon-link {
   color: #DD4B39;
 }
 
-.hatena-btn-icon-link:hover {
+.hatena-btn-icon-link {
   color: #3C7DD1;
 }
 
-.pocket-btn-icon-link:hover {
+.pocket-btn-icon-link {
   color: #EE4257;
 }
 
-.line-btn-icon-link:hover {
+.line-btn-icon-link {
   color: #00C300;
 }
 
-.feedly-btn-icon-link:hover {
+.feedly-btn-icon-link {
   color: #2BB24C;
 }
 
@@ -418,7 +417,6 @@ blockquote cite {
 }
 
 .article-info h4 {
-  background: #e9e9e9;
   font-size: 1.4em;
   margin: 0;
   padding: .6em;
