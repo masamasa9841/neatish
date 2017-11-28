@@ -129,8 +129,9 @@ blockquote cite {
   background-color: #fff;
   height: 100vh;
   margin-left: 220px;
-  overflow: auto;
   position: relative;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   z-index: 900;
 }
 

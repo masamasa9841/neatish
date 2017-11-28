@@ -3,8 +3,9 @@
   background-color: $_base-background-color;
   height: 100vh;
   margin-left: $_base-navigation-width;
-  overflow: auto;
   position: relative;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   z-index: 900;
 
   .close & {
