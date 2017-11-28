@@ -11,7 +11,6 @@ header h1 {
 
 // サイトロゴ
 .global-head {
-  background: $_base-background-color;
   border-bottom: 1px solid $_base-border-color;
   padding-left: $_base-header-height; //サイト名の位置調整
   position: fixed;
@@ -44,9 +43,6 @@ header h1 {
 
   & span {
     @include ease-in-out;
-    @include mini-display {
-      background: $_base-submenu-color;
-    }
     background: #fff;
     display: block;
     height: 2px;
@@ -64,10 +60,6 @@ header h1 {
 
     &:nth-child(3) {
       top: 21px;
-    }
-
-    .close & {
-      background: $_base-submenu-color;
     }
   }
 }
