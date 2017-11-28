@@ -13,6 +13,7 @@ $theme_color      = get_theme_mod( 'theme_color' );
 $header_textcolor = get_theme_mod( 'header_textcolor' );
 $text_color = get_theme_mod( 'text_color' );
 $header_footer_color = get_theme_mod( 'header_footer_color' );
+$toggle = get_theme_mod( 'toggle' );
 ?>
 
 <?php echo "<style type='text/css'>"; ?>
@@ -53,6 +54,9 @@ $header_footer_color = get_theme_mod( 'header_footer_color' );
 
 	body {
 		color: <?php echo esc_html( $text_color ); ?>
+	}
+	.nav-toggle span {
+		background: <?php echo esc_html( $toggle ); ?>
 	}
 
 <?php echo '</style>'; ?><j:w></j:w>

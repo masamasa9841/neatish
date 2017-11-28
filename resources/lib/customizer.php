@@ -81,6 +81,21 @@ function theme_customize_register( $wp_customize ) {
 			'priority'    => 25,
 		)
 	) );
+
+	// Text Color.
+	$wp_customize->add_setting( 'toggle', array(
+		'sanitize_callback' => 'sanitize_hex_color',
+		'default' => 'fcfcfc',
+	) );
+	$wp_customize->add_control( new WP_Customize_Color_Control(
+		$wp_customize,
+		'toggle', array(
+			'label'       => 'Toggle color',
+			'section'     => 'colors',
+			'settings'    => 'toggle',
+			'priority'    => 30,
+		)
+	) );
 }
 
 add_action( 'customize_register', 'theme_customize_register' );
