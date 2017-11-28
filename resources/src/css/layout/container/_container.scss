@@ -1,11 +1,11 @@
 .container {
   @include css3(margin-left, $_base-animation-speed, linear);
+  -webkit-overflow-scrolling: touch;
   background-color: $_base-background-color;
   height: 100vh;
   margin-left: $_base-navigation-width;
-  position: relative;
   overflow: scroll;
-  -webkit-overflow-scrolling: touch;
+  position: relative;
   z-index: 900;
 
   .close & {

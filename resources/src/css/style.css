@@ -126,12 +126,12 @@ blockquote cite {
   -ms-transition: margin-left 0.25s linear;
   -o-transition: margin-left 0.25s linear;
   transition: margin-left 0.25s linear;
+  -webkit-overflow-scrolling: touch;
   background-color: #fff;
   height: 100vh;
   margin-left: 220px;
-  position: relative;
   overflow: scroll;
-  -webkit-overflow-scrolling: touch;
+  position: relative;
   z-index: 900;
 }
 
