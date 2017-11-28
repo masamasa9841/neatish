@@ -11,8 +11,9 @@ header h1 {
 
 // サイトロゴ
 .global-head {
+  background-color: $_base-background-color;
   border-bottom: 1px solid $_base-border-color;
-  padding-left: $_base-header-height; //サイト名の位置調整
+  padding-left: $_base-header-height + 30; //サイト名の位置調整
   position: fixed;
   width: 100%; // 画面いっぱい
   z-index: 1000;
