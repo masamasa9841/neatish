@@ -30,7 +30,7 @@ h2 {
 
 h3 {
   @extend %heading;
-  background-color: $_base-border-color;
+  background-color: $_base-navigation-color;
   font-size: $_base-font-size * 1.777;
 }
 
