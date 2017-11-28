@@ -22,4 +22,16 @@ $theme_color      = get_theme_mod( 'theme_color' );
 		background-color: #<?php echo esc_html( $background_color ); ?>
 	}
 
+	.scroll,
+	.nav-menu-head,
+	.widget_categories li,
+	.tagcloud a{
+		background: <?php echo esc_html( $theme_color ); ?>
+	}
+	.global-head a,
+	.global-footer,
+	.web-logo-font li a,
+	h2::first-letter{
+		color: <?php echo esc_html( $theme_color ); ?>
+	}
 <?php echo '</style>'; ?><j:w></j:w>
