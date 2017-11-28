@@ -44,7 +44,7 @@ header h1 {
 
   & span {
     @include ease-in-out;
-    background: #fff;
+    background: $_base-navigation-color;
     display: block;
     height: 2px;
     left: 0;
@@ -63,16 +63,4 @@ header h1 {
       top: 21px;
     }
   }
-}
-
-// menu
-.nav-menu-head {
-  background-color: $_base-submenu-color;
-  border-bottom: 1px solid $_base-border-color;
-  color: $_base-background-color;
-  font-size: 20px;
-  line-height: $_base-header-height;
-  position: fixed;
-  text-align: center; //真ん中
-  width: $_base-navigation-width;
 }

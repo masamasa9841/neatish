@@ -548,7 +548,7 @@ header h1 {
 .nav-toggle span {
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
-  background: #fff;
+  background: #600358;
   display: block;
   height: 2px;
   left: 0;
@@ -566,17 +566,6 @@ header h1 {
 
 .nav-toggle span:nth-child(3) {
   top: 21px;
-}
-
-.nav-menu-head {
-  background-color: #350031;
-  border-bottom: 1px solid #e9e9e9;
-  color: #fff;
-  font-size: 20px;
-  line-height: 50px;
-  position: fixed;
-  text-align: center;
-  width: 220px;
 }
 
 .global-footer {
