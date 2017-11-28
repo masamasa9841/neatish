@@ -24,7 +24,9 @@
 		<body <?php body_class( 'close' ); ?>>
 	<?php } ?>
 		<!-- hamburger button -->
-		<div class="nav-menu-head">Menu</div>
+		<header class="global-head">
+			<h1 class="brand-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		</header>
 		<div class="nav-toggle">
 			<div>
 				<span></span>
@@ -38,8 +40,5 @@
 			</nav>
 		</aside>
 		<div class="container">
-			<header class="global-head">
-				<h1 class="brand-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			</header>
 			<main class="main-contents">
 				<section class="inner">
