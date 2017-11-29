@@ -136,6 +136,7 @@ blockquote cite {
   margin-left: 220px;
   min-height: 100%;
   overflow: scroll;
+  padding-bottom: 50px;
   position: relative;
   z-index: 900;
 }
@@ -582,6 +583,7 @@ header h1 {
   line-height: 25px;
   padding-left: 60px;
   position: absolute;
+  width: 100%;
 }
 
 @media screen and (max-width: 950px) {
