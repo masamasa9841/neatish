@@ -2,8 +2,8 @@
   @include css3(margin-left, $_base-animation-speed, linear);
   -webkit-overflow-scrolling: touch;
   background-color: $_base-background-color;
-  height: 100vh;
   margin-left: $_base-navigation-width;
+  min-height: 100%;
   overflow: scroll;
   position: relative;
   z-index: 900;
