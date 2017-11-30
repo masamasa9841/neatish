@@ -27,7 +27,8 @@ $entry_title         = get_theme_mod( 'entry_title' );
 	}
 
 	/* header text color */
-	.global-head a{
+	.global-head a,
+	.global-footer{
 		color: #<?php echo esc_html( $header_textcolor ); ?>
 	}
 
@@ -49,7 +50,6 @@ $entry_title         = get_theme_mod( 'entry_title' );
 	.tagcloud a{
 		background: <?php echo esc_html( $theme_color ); ?>
 	}
-	.global-footer,
 	blockquote::before {
 		color: <?php echo esc_html( $theme_color ); ?>
 	}

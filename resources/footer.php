@@ -14,7 +14,7 @@
 			</main>
 			<?php get_sidebar(); ?>
 			<footer class="global-footer">
-				&copy; <?php bloginfo( 'name' ); ?> All Rights Reserved.
+				<?php get_template_part( 'template-parts/footer/site', 'info' ); ?>
 			</footer>
 		</div><!-- container -->
 	</body>
