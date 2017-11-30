@@ -6,10 +6,8 @@
   background-color: $_base-background-color;
   border-top: 2px solid $_base-border-color;
   bottom: 0;
-  clear: both; // 回り込み解除
   color: $_base-navigation-color;
   line-height: $_base-header-height / 2;
-  padding-left: 60px; //サイト名の位置調整
   position: absolute;
   width: 100%;
 }

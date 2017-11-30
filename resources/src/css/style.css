@@ -131,11 +131,9 @@ blockquote cite {
   -ms-transition: margin-left 0.25s linear;
   -o-transition: margin-left 0.25s linear;
   transition: margin-left 0.25s linear;
-  -webkit-overflow-scrolling: touch;
   background-color: #fff;
   margin-left: 220px;
   min-height: 100%;
-  overflow: scroll;
   padding-bottom: 50px;
   position: relative;
   z-index: 900;
@@ -149,6 +147,12 @@ blockquote cite {
   .container {
     margin-left: 0;
   }
+}
+
+.container::after {
+  clear: both;
+  content: '';
+  display: block;
 }
 
 .scroll {
@@ -578,10 +582,8 @@ header h1 {
   background-color: #fff;
   border-top: 2px solid #e9e9e9;
   bottom: 0;
-  clear: both;
   color: #600358;
   line-height: 25px;
-  padding-left: 60px;
   position: absolute;
   width: 100%;
 }

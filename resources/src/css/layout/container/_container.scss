@@ -1,10 +1,8 @@
 .container {
   @include css3(margin-left, $_base-animation-speed, linear);
-  -webkit-overflow-scrolling: touch;
   background-color: $_base-background-color;
   margin-left: $_base-navigation-width;
   min-height: 100%;
-  overflow: scroll;
   padding-bottom: 50px;
   position: relative;
   z-index: 900;
@@ -14,5 +12,11 @@
   }
   @include mini-display {
     margin-left: 0;
+  }
+
+  &::after {
+    clear: both;
+    content: '';
+    display: block;
   }
 }
