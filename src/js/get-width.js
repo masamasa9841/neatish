@@ -1,17 +1,36 @@
-// 画面調整をするjs
-(function($) {
-  $(function () {
-    // 各ディスプレイのサイズを取得。(padding, marign含む)
-    var window_max_Width = $(window).width();
-    var navigation_Width = $(".scroll").outerWidth();
-    var sidebar_Width = $(".sidebar").outerWidth();
-    var max_main_widh = window_max_Width - navigation_Width - sidebar_Width -20; // 20は右の隙間
-    $('.main-contents').css('width', max_main_widh); // css追加
-    // console.log(max_main_widh);
+/**
+ * Screen adjustment for different display sizes.
+ */
 
-    var wp_height = $("#wpadminbar").height();
-    var header_height = $(".global-head").height();
-    // console.log(wp_height + header_height);
+( function( $ ) {
+
+  $( document ).ready( function() {
+    var wp_height = $( '#wpadminbar' ).height();
+    var header_height = $( '.global-head' ).height();
     $('.web-logo-font').css('top', wp_height + header_height);
+    add_width();
   });
+
+  $( function () {
+    $('.nav-toggle').on( 'click', function () {
+      $('body').toggleClass('close');
+      add_width();
+    });
+  });
+
+  function add_width () {
+    var window_width = $(window).width();
+    var navigation_width = $( '.scroll' ).outerWidth();
+    var sidebar_width = $( '.sidebar' ).outerWidth();
+    var max_main_width = window_width - navigation_width - sidebar_width - 20;
+    var inner = window_width - navigation_width - sidebar_width - 20 - 75;
+    if( $( 'body' ).hasClass( 'close' ) ) {
+      $( '.main-contents' ).css( 'width', max_main_width + navigation_width );
+      // $( '.entry-body img' ).css( 'max-width', inner + navigation_width );
+    } else {
+      $( '.main-contents' ).css( 'width', max_main_width );
+      // $( '.entry-body img' ).css( 'max-width', inner);
+    }
+  }
+
 })(jQuery);

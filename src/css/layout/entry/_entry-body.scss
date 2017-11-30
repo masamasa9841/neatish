@@ -3,14 +3,10 @@
     width: 100%;
   }
   padding-top: $_base-header-height / 2;
-  width: $_base-main-width - $_base-header-height;
 
   & img {
-    @include mobile {
-      max-width: 100%;
-    }
     height: auto;
-    max-width: $_base-main-width - $_base-header-height;
+    max-width: 100%;
   }
 }
 
@@ -20,9 +16,7 @@
 }
 
 .wp-caption {
-  border: .1em solid $_base-border-color;
-  max-width: 100%;
-  text-align: center;
+  font-size: $_base-font-size * 1.2;
 
   &-text {
     @extend %caption;

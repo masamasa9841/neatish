@@ -10,7 +10,10 @@
 ?>
 <div id="list" role="main">
 	<?php if ( have_posts() ) : ?>
-		<?php while ( have_posts() ) : the_post(); ?>
+		<?php
+		while ( have_posts() ) :
+			the_post();
+		?>
 			<?php if ( is_sticky() ) : ?>
 				<div class="sticky">
 					<?php get_template_part( 'templates/layout/list/entry' ); ?>

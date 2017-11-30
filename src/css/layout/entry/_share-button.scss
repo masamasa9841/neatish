@@ -31,7 +31,6 @@ $_logo-font-size: 28px; // シェアボタンのサイズ
     position: relative; // to social-count
 
     & a {
-      color: $_base-submenu-color;
       font-size: $_logo-font-size;
       text-decoration: none;
     }
@@ -46,10 +45,10 @@ $_logo-font-size: 28px; // シェアボタンのサイズ
 }
 
 // hoverしたら、色をつける
-.twitter-btn-icon-link     { &:hover { color:#55acee;}}
-.facebook-btn-icon-link    { &:hover { color:#3C5A99;}}
-.google-plus-btn-icon-link { &:hover { color:#DD4B39;}}
-.hatena-btn-icon-link      { &:hover { color:#3C7DD1;}}
-.pocket-btn-icon-link      { &:hover { color:#EE4257;}}
-.line-btn-icon-link        { &:hover { color:#00C300;}}
-.feedly-btn-icon-link      { &:hover { color:#2BB24C;}}
+.twitter-btn-icon-link     { color:#55acee;}
+.facebook-btn-icon-link    { color:#3C5A99;}
+.google-plus-btn-icon-link { color:#DD4B39;}
+.hatena-btn-icon-link      { color:#3C7DD1;}
+.pocket-btn-icon-link      { color:#EE4257;}
+.line-btn-icon-link        { color:#00C300;}
+.feedly-btn-icon-link      { color:#2BB24C;}

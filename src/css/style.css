@@ -1,15 +1,19 @@
 @charset "UTF-8";
 body {
   background: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Meiryo, MyYuGothicM, YuGothic, "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Meiryo, MyYuGothicM, YuGothic, 'Helvetica Neue', sans-serif;
   font-size: 1em;
   margin: 0;
   padding: 0;
 }
 
-.heading, h1, h2, h3, h4, h5 {
-  margin: 0.5em 0 0.5em;
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
   line-height: 1.2;
+  margin: .5em 0;
 }
 
 h1 {
@@ -21,19 +25,19 @@ h2 {
 }
 
 h2::first-letter {
-  font-size: 1.3em;
   color: #600358;
+  font-size: 1.3em;
 }
 
 h3 {
-  background-color: #e9e9e9;
+  background-color: #600358;
   font-size: 1.777em;
 }
 
 h4 {
   border-bottom: solid 3px #e9e9e9;
-  position: relative;
   font-size: 1.333em;
+  position: relative;
 }
 
 h4::after {
@@ -86,11 +90,15 @@ blockquote cite {
 }
 
 .main-contents {
-  background-color: #fff;
+  -webkit-transition:  0.25s linear;
+  -moz-transition:  0.25s linear;
+  -ms-transition:  0.25s linear;
+  -o-transition:  0.25s linear;
+  transition:  0.25s linear;
   float: left;
-  max-width: 1000px;
+  min-height: 100%;
+  max-width: 1500px;
   min-width: 700px;
-  width: 700px;
 }
 
 @media screen and (max-width: 950px) {
@@ -124,11 +132,11 @@ blockquote cite {
   -o-transition: margin-left 0.25s linear;
   transition: margin-left 0.25s linear;
   background-color: #fff;
-  height: 100vh;
   margin-left: 220px;
+  min-height: 100%;
+  padding-bottom: 50px;
   position: relative;
   z-index: 900;
-  overflow: auto;
 }
 
 .close .container {
@@ -141,10 +149,10 @@ blockquote cite {
   }
 }
 
-@media screen and (max-width: 950px) {
-  .container {
-    overflow: unset;
-  }
+.container::after {
+  clear: both;
+  content: '';
+  display: block;
 }
 
 .scroll {
@@ -247,7 +255,6 @@ blockquote cite {
   border-bottom: 2px double #e9e9e9;
   hyphens: auto;
   margin-bottom: 28px;
-  max-width: 700px;
   padding-bottom: 24px;
   word-wrap: break-word;
 }
@@ -286,21 +293,9 @@ blockquote cite {
   }
 }
 
-.read-more a {
-  color: #0B91EA;
-  outline: none;
-  text-decoration: none;
-}
-
 .entry-meta {
   clear: left;
   color: #757575;
-}
-
-.entry-meta > span a {
-  color: #333;
-  padding: 2px;
-  text-decoration: none;
 }
 
 .sticky {
@@ -309,7 +304,6 @@ blockquote cite {
 
 .entry-body {
   padding-top: 25px;
-  width: 650px;
 }
 
 @media screen and (max-width: 950px) {
@@ -320,13 +314,7 @@ blockquote cite {
 
 .entry-body img {
   height: auto;
-  max-width: 650px;
-}
-
-@media screen and (max-width: 950px) {
-  .entry-body img {
-    max-width: 100%;
-  }
+  max-width: 100%;
 }
 
 .wp-caption-text, .gallery-caption {
@@ -335,9 +323,7 @@ blockquote cite {
 }
 
 .wp-caption {
-  border: 0.1em solid #e9e9e9;
-  max-width: 100%;
-  text-align: center;
+  font-size: 1.2em;
 }
 
 .aligncenter {
@@ -390,7 +376,6 @@ blockquote cite {
 }
 
 .web-logo-font li a {
-  color: #350031;
   font-size: 28px;
   text-decoration: none;
 }
@@ -402,31 +387,31 @@ blockquote cite {
   right: 0;
 }
 
-.twitter-btn-icon-link:hover {
+.twitter-btn-icon-link {
   color: #55acee;
 }
 
-.facebook-btn-icon-link:hover {
+.facebook-btn-icon-link {
   color: #3C5A99;
 }
 
-.google-plus-btn-icon-link:hover {
+.google-plus-btn-icon-link {
   color: #DD4B39;
 }
 
-.hatena-btn-icon-link:hover {
+.hatena-btn-icon-link {
   color: #3C7DD1;
 }
 
-.pocket-btn-icon-link:hover {
+.pocket-btn-icon-link {
   color: #EE4257;
 }
 
-.line-btn-icon-link:hover {
+.line-btn-icon-link {
   color: #00C300;
 }
 
-.feedly-btn-icon-link:hover {
+.feedly-btn-icon-link {
   color: #2BB24C;
 }
 
@@ -437,7 +422,6 @@ blockquote cite {
 }
 
 .article-info h4 {
-  background: #e9e9e9;
   font-size: 1.4em;
   margin: 0;
   padding: .6em;
@@ -537,9 +521,9 @@ header h1 {
 }
 
 .global-head {
-  background: #fff;
+  background-color: #fff;
   border-bottom: 1px solid #e9e9e9;
-  padding-left: 50px;
+  padding-left: 80px;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -574,18 +558,12 @@ header h1 {
 .nav-toggle span {
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
-  background: #fff;
+  background: #600358;
   display: block;
   height: 2px;
   left: 0;
   position: absolute;
   width: 100%;
-}
-
-@media screen and (max-width: 1200px) {
-  .nav-toggle span {
-    background: #350031;
-  }
 }
 
 .nav-toggle span:nth-child(1) {
@@ -600,28 +578,14 @@ header h1 {
   top: 21px;
 }
 
-.close .nav-toggle span {
-  background: #350031;
-}
-
-.nav-menu-head {
-  background-color: #350031;
-  border-bottom: 1px solid #e9e9e9;
-  color: #fff;
-  font-size: 20px;
-  line-height: 50px;
-  position: fixed;
-  text-align: center;
-  width: 220px;
-}
-
 .global-footer {
-  background: #fff;
+  background-color: #fff;
   border-top: 2px solid #e9e9e9;
-  clear: both;
+  bottom: 0;
   color: #600358;
   line-height: 25px;
-  padding-left: 60px;
+  position: absolute;
+  width: 100%;
 }
 
 @media screen and (max-width: 950px) {
