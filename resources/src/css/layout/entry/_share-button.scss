@@ -1,0 +1,54 @@
+// シェアボタンのcss
+$_logo-font-size: 28px; // シェアボタンのサイズ
+
+.web-logo-font {
+  @include mobile { // mobileだったら、横表示
+    margin: 0;
+    margin-top: 5em;
+    position: relative;
+    top: 0 !important;
+
+    &::before {
+      content: 'シェア';
+      position: absolute;
+      top: -2em;
+    }
+  }
+  font-family: sans-serif;
+  margin-left: -$_base-header-height * 1.5 + ($_base-header-height - $_logo-font-size) / 2;
+  padding: 0;
+  position: fixed;
+  top: $_base-header-height; // jsで上書きする
+
+  & li {
+    @include mobile { // mobileだったら、横表示
+      float: left;
+    }
+    list-style-type: none;
+    margin-bottom: 2em;
+    margin-right: .5em;
+    padding-right: .5em;
+    position: relative; // to social-count
+
+    & a {
+      font-size: $_logo-font-size;
+      text-decoration: none;
+    }
+  }
+}
+
+.social-count { // 数字
+  bottom: 0;
+  font-size: $_logo-font-size / 2.5;
+  position: absolute;
+  right: 0;
+}
+
+// hoverしたら、色をつける
+.twitter-btn-icon-link     { color:#55acee;}
+.facebook-btn-icon-link    { color:#3C5A99;}
+.google-plus-btn-icon-link { color:#DD4B39;}
+.hatena-btn-icon-link      { color:#3C7DD1;}
+.pocket-btn-icon-link      { color:#EE4257;}
+.line-btn-icon-link        { color:#00C300;}
+.feedly-btn-icon-link      { color:#2BB24C;}

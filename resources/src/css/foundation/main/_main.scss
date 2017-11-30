@@ -1,0 +1,25 @@
+.main-contents {
+  @include mobile {
+    min-width: auto;
+    width: 100% !important;
+  }
+  @include css3('', $_base-animation-speed, linear);
+  float: left;
+  min-height: 100%;
+  max-width: 1500px;
+  min-width: $_base-main-width;
+
+  & p {
+    line-height: 1.9;
+    margin-bottom: 1em;
+  }
+
+  & .inner {
+    @include mobile {
+      padding: $_base-header-height 10px 0;
+    }
+    margin-bottom: 2em;
+    padding-left: $_base-header-height * 1.5;
+    padding-top: $_base-header-height;
+  }
+}

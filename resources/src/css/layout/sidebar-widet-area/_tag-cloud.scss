@@ -1,0 +1,26 @@
+// tag
+.tagcloud {
+
+  & a {
+    background: $_base-navigation-color;
+    color: $_base-navigation-font-color;
+    display: inline-block;
+    font-size: 1em!important;
+    line-height: 1em;
+    margin-top: 3px;
+    padding: 6px;
+    text-decoration: none;
+
+    &:hover {
+      background: $_base-navigation-color-hover;
+    }
+
+    &::before {
+      content: '\f02b'; // 絵文字
+      font-family: 'FontAwesome';
+      padding-right: 4px;
+
+    }
+
+  }
+}
