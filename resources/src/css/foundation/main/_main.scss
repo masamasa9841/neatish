@@ -1,6 +1,6 @@
 .main-contents {
   @include mobile {
-    min-width: auto;
+    min-width: initial;
     width: 100% !important;
   }
   @include css3('', $_base-animation-speed, linear);
