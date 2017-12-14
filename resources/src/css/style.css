@@ -99,6 +99,7 @@ blockquote cite {
   min-height: 100%;
   max-width: 1500px;
   min-width: 700px;
+  word-wrap: break-word;
 }
 
 @media screen and (max-width: 950px) {
