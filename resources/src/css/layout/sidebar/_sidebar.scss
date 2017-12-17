@@ -8,7 +8,7 @@
   float: left;
   font-size: $_base-font-size - 0.1em;
   padding-left: $_base-header-height;
-  padding-top: $_base-header-height;
+  padding-top: $_base-header-height + 35;
   width: $_base-sidebar-width;
 
   & h2 {

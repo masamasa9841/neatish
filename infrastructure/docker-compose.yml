@@ -20,6 +20,8 @@ services:
       - ./app/php/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
       - ./app/wordpress/wp-config.php:/var/www/html/wp-config.php
       - ../resources/:/var/www/html/wp-content/themes/neatish
+      - ~/compass-sns/:/var/www/html/wp-content/plugins/compass-sns/
+      - ~/kvcodes-options/:/var/www/html/wp-content/plugins/kvcodes-options/
 
   db:
     image: mysql:5.7.19
