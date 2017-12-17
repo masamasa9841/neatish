@@ -96,6 +96,7 @@ blockquote cite {
   -o-transition:  0.25s linear;
   transition:  0.25s linear;
   float: left;
+  width: 700px;
   min-height: 100%;
   max-width: 1500px;
   min-width: 700px;

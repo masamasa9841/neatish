@@ -5,6 +5,7 @@
   }
   @include css3('', $_base-animation-speed, linear);
   float: left;
+  width: 700px;
   min-height: 100%;
   max-width: 1500px;
   min-width: $_base-main-width;
