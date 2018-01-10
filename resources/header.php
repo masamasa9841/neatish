@@ -18,11 +18,11 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<?php wp_head(); ?>
 	</head>
-	<?php if ( ! wp_is_mobile() ) { ?>
+	<!-- <?php if ( ! wp_is_mobile() ) { ?>
 		<body <?php body_class( 'close' ); ?>>
 	<?php } elseif ( is_home() ) { ?>
 		<body <?php body_class(); ?>>
-	<?php } ?>
+	<?php } ?> -->
 		<!-- hamburger button -->
 		<header class="global-head">
 			<h1 class="brand-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
